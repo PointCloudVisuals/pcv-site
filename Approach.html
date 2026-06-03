@@ -46,6 +46,10 @@
 
   /* ───────── THE STUDIO (merged from About) ───────── */
   .studio-section{ border-top: 1px solid var(--hair); }
+  /* This heading is long; the default 1fr title column squeezes it into too many rows.
+     Give the title more width on desktop/tablet so it wraps to ~3 lines (mobile stays full-width). */
+  .studio-section .section-head{ grid-template-columns: 1.4fr 1fr; }
+  .studio-section h2.section-title{ max-width: 24ch; }
   .studio-grid{
     display: grid;
     grid-template-columns: 5fr 7fr;
