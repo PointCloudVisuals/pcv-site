@@ -1,0 +1,1260 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Work: Cinematic LiDAR &amp; reality capture projects · Point Cloud Visuals</title>
+<meta name="description" content="Selected reality capture visualisation projects across heritage &amp; culture, aerial mapping &amp; survey, architecture &amp; development, and marine / industrial. Cinematic visuals built from real survey datasets for studios in the US, UK, EU and beyond." />
+<meta name="keywords" content="LiDAR case studies, reality capture portfolio, point cloud visualisation work, scan-to-BIM projects, aerial LiDAR films, marine reality capture, heritage scan visualisation, NUBIGON render" />
+<meta name="author" content="Edwin Boer, Registered Architect" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+<link rel="canonical" href="https://pointcloudvisuals.com/work" />
+<link rel="icon" type="image/png" href="assets/pcv-mark-white.png" />
+<link rel="apple-touch-icon" href="assets/pcv-mark-white.png" />
+<link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+<meta name="theme-color" content="#0E0E10" />
+<meta name="color-scheme" content="dark" />
+
+<!-- OPEN GRAPH -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Point Cloud Visuals" />
+<meta property="og:title" content="Work, Cinematic LiDAR &amp; reality capture projects" />
+<meta property="og:description" content="Projects across heritage, aerial mapping, architecture and marine, built from real survey data for tenders, boardrooms and trade-show floors." />
+<meta property="og:url" content="https://pointcloudvisuals.com/work" />
+<meta property="og:image" content="https://pointcloudvisuals.com/og-work.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:locale" content="en_AU" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Work, Point Cloud Visuals" />
+<meta name="twitter:description" content="Reality capture projects across four sectors." />
+<meta name="twitter:image" content="https://pointcloudvisuals.com/og-work.jpg" />
+
+<!-- AI / LLM DISCOVERABILITY -->
+<link rel="alternate" type="text/plain" title="llms.txt" href="/llms.txt" />
+<meta name="ai:summary" content="The Point Cloud Visuals work index, organised in four sectors: Heritage &amp; Culture (Embassy of the Free Mind, Amsterdam; Kaptur VR historic centre), Aerial Mapping &amp; Survey (Phoenix LiDAR Systems, GeoWeek booth reel, Sandy Creek flood response, 140 km2 airborne capture; Quiddity Engineering UAV survey), Architecture &amp; Development (My Digital Buildings monthly pipeline; Heliac house-to-restaurant conversion), and Marine / Industrial (Digital Dry Dock hull-scan sales films). Multi-video clients (Phoenix, My Digital Buildings) show one card that opens a viewer revealing the rest of their work." />
+<meta name="ai:scope" content="Case studies, project outcomes, sector breakdown, deliverable formats, regional distribution of LiDAR and reality capture visualisation work." />
+<meta name="ai:audience" content="Reality capture studio owners, surveying firms evaluating visual production partners, AEC clients researching cinematic LiDAR work." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/shared.css" />
+
+<style>
+  /* ───────── WORK · page-specific ───────── */
+
+  /* Filter pills */
+  .filters{
+    max-width: var(--maxw);
+    margin: 0 auto;
+    padding: clamp(28px, 4vh, 44px) var(--pad-x);
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 24px; flex-wrap: wrap;
+    border-bottom: 1px solid var(--hair);
+    position: sticky; top: 73px; z-index: 30;
+    background: rgba(14,14,16,0.85);
+    backdrop-filter: saturate(140%) blur(14px);
+    -webkit-backdrop-filter: saturate(140%) blur(14px);
+  }
+  .filter-pills{ display: flex; flex-wrap: wrap; gap: 6px; }
+  .filter-pill{
+    font-family: var(--sans);
+    background: transparent;
+    border: 1px solid var(--hair);
+    color: var(--text-2);
+    padding: 9px 16px;
+    border-radius: 999px;
+    font-size: 12.5px;
+    letter-spacing: 0.01em;
+    cursor: pointer;
+    transition: border-color .2s ease, color .2s ease, background .2s ease;
+    display: inline-flex; align-items: center; gap: 8px;
+    white-space: nowrap;
+  }
+  .filter-pill .ct{
+    font-family: var(--mono);
+    font-size: 10.5px;
+    color: var(--steel);
+    letter-spacing: 0.05em;
+  }
+  .filter-pill:hover{ border-color: var(--hair-strong); color: var(--text); }
+  .filter-pill.is-active{
+    background: var(--brass);
+    border-color: var(--brass);
+    color: #1a1408;
+  }
+  .filter-pill.is-active .ct{ color: rgba(26,20,8,0.7); }
+  .filter-meta{
+    font-family: var(--mono);
+    font-size: 10.5px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--steel);
+    display: inline-flex; align-items: center; gap: 10px;
+  }
+  .filter-meta .live-dot{
+    width: 6px; height: 6px;
+    background: var(--brass);
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(184,153,104,0.18);
+  }
+  /* Short labels are desktop-hidden; swapped in on mobile to fit two rows */
+  .filter-pill .lbl-short{ display: none; }
+
+  @media (max-width: 760px){
+    /* Was eating half the screen, trim it to two tidy rows */
+    .filters{
+      padding: 11px var(--pad-x) 12px;
+      gap: 8px;
+      justify-content: flex-start;
+    }
+    .filter-pills{ gap: 6px; }
+    .filter-pill{ padding: 7px 13px; font-size: 12px; }
+    .filter-pill .lbl-full{ display: none; }
+    .filter-pill .lbl-short{ display: inline; }
+    .filter-meta{ display: none; }
+  }
+
+  /* ───────── SECTOR BLOCKS ───────── */
+  .sectors{
+    max-width: var(--maxw);
+    margin: 0 auto;
+    padding: clamp(40px, 6vh, 72px) var(--pad-x) clamp(64px, 10vh, 110px);
+  }
+  .cat-block{ padding-top: clamp(40px, 6vh, 72px); }
+  .cat-block:first-child{ padding-top: clamp(16px, 3vh, 32px); }
+  .cat-block.hidden{ display: none; }
+  .cat-head{
+    display: flex; align-items: end; justify-content: space-between;
+    gap: 28px;
+    margin-bottom: clamp(26px, 3.6vh, 44px);
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--hair-strong);
+    flex-wrap: wrap;
+  }
+  .cat-head .lhs{ display: flex; flex-direction: column; gap: 10px; }
+  .cat-head .eyebrow{
+    font-family: var(--mono);
+    font-size: 10.5px;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: var(--brass);
+    display: inline-flex; align-items: center; gap: 12px;
+  }
+  .cat-head .eyebrow .bar{ width: 22px; height: 1px; background: var(--brass); opacity: 0.6; }
+  .cat-head h2{
+    font-family: var(--serif);
+    font-weight: 300;
+    font-size: clamp(28px, 3vw, 42px);
+    line-height: 1.06;
+    letter-spacing: -0.015em;
+    margin: 0;
+    color: var(--text);
+  }
+  .cat-head .ct{
+    font-family: var(--mono);
+    font-size: 10.5px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--steel);
+    white-space: nowrap;
+  }
+  .work-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: clamp(20px, 2.4vw, 32px);
+  }
+
+  /* ───────── PROJECT CARD ───────── */
+  .pcard{
+    display: flex; flex-direction: column;
+    background: rgba(255,255,255,0.012);
+    border: 1px solid var(--hair);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: border-color .3s ease, background .3s ease, transform .3s ease;
+    text-align: left;
+    cursor: pointer;
+    width: 100%;
+    font: inherit;
+    color: inherit;
+    padding: 0;
+  }
+  .pcard:hover, .pcard:focus-visible{
+    border-color: rgba(184,153,104,0.35);
+    background: rgba(255,255,255,0.02);
+    transform: translateY(-2px);
+    outline: none;
+  }
+  .pcard .poster{
+    position: relative;
+    aspect-ratio: 16 / 9;
+    background: #0a0a0c;
+    border-bottom: 1px solid var(--hair);
+    overflow: hidden;
+  }
+  .pcard .poster .tint{ position: absolute; inset: 0; }
+  .pcard .poster video.loop{
+    position: absolute; inset: 0;
+    width: 100%; height: 100%;
+    object-fit: cover;
+    opacity: 0.92;
+  }
+  .pcard.aerial    .poster .tint{ background: radial-gradient(80% 60% at 30% 30%, rgba(184,153,104,0.20), transparent 70%), linear-gradient(180deg, #15161a, #0a0a0e); }
+  .pcard.marine    .poster .tint{ background: radial-gradient(80% 60% at 70% 70%, rgba(139,155,168,0.22), transparent 70%), linear-gradient(180deg, #10131a, #0a0a0e); }
+  .pcard.boardroom .poster .tint{ background: radial-gradient(70% 60% at 50% 40%, rgba(184,153,104,0.16), transparent 70%), linear-gradient(180deg, #1a1612, #0a0a0e); }
+  .pcard.infra     .poster .tint{ background: radial-gradient(80% 60% at 20% 80%, rgba(139,155,168,0.18), transparent 70%), linear-gradient(180deg, #14171a, #0a0a0e); }
+  .pcard.heritage  .poster .tint{ background: radial-gradient(80% 60% at 80% 20%, rgba(184,153,104,0.18), transparent 70%), linear-gradient(180deg, #16130e, #0a0a0e); }
+  .pcard.recurring .poster .tint{ background: radial-gradient(70% 60% at 50% 60%, rgba(139,155,168,0.14), rgba(184,153,104,0.10) 60%, transparent 80%), linear-gradient(180deg, #121317, #0a0a0e); }
+  .pcard.scan      .poster .tint{ background: radial-gradient(70% 60% at 40% 50%, rgba(184,153,104,0.16), transparent 70%), linear-gradient(180deg, #17140f, #0a0a0e); }
+  .pcard .poster .tint, .pcard .poster .pf-bg{
+    transition: transform .9s cubic-bezier(.2,.7,.2,1);
+    will-change: transform;
+  }
+  .pcard:hover .poster .tint{ transform: scale(1.04); }
+  .pcard:hover .poster .pf-bg{ transform: scale(1.08) translate(-4px, -4px); }
+  .pcard .poster .play{
+    position: absolute; left: 16px; bottom: 16px;
+    width: 40px; height: 40px;
+    border-radius: 50%;
+    background: rgba(14,14,16,0.6);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(245,241,234,0.22);
+    display: grid; place-items: center;
+    transition: background .2s ease, border-color .2s ease;
+  }
+  .pcard .poster .play::after{
+    content:""; width: 0; height: 0;
+    border-left: 9px solid var(--text);
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    margin-left: 3px;
+  }
+  .pcard:hover .poster .play{ background: var(--brass); border-color: var(--brass); }
+  .pcard:hover .poster .play::after{ border-left-color: #1a1408; }
+  .pcard .poster .flag{
+    position: absolute; top: 14px; right: 14px;
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.22em;
+    color: rgba(245,241,234,0.78);
+    background: rgba(14,14,16,0.6);
+    border: 1px solid rgba(245,241,234,0.18);
+    padding: 4px 8px;
+    border-radius: 3px;
+  }
+  .pcard .poster .sector-tag{
+    position: absolute; top: 14px; left: 14px;
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    color: var(--brass);
+    background: rgba(14,14,16,0.62);
+    border: 1px solid rgba(184,153,104,0.3);
+    padding: 4px 8px;
+    border-radius: 3px;
+  }
+  /* "more work" badge, signals returning / multi-video clients */
+  .pcard .poster .vbadge{
+    position: absolute; right: 14px; bottom: 16px;
+    display: inline-flex; align-items: center; gap: 7px;
+    font-family: var(--mono);
+    font-size: 9.5px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #1a1408;
+    background: var(--brass);
+    padding: 5px 9px;
+    border-radius: 999px;
+    font-weight: 500;
+  }
+  .pcard .poster .vbadge.muted{
+    color: rgba(245,241,234,0.82);
+    background: rgba(14,14,16,0.66);
+    border: 1px solid var(--hair-strong);
+  }
+  .pcard .poster .vbadge svg{ width: 11px; height: 11px; display: block; }
+  .pcard .body{
+    padding: clamp(20px, 2.4vw, 28px);
+    display: flex; flex-direction: column; gap: 14px;
+    flex: 1;
+  }
+  .pcard .row1{
+    display: flex; align-items: baseline; justify-content: space-between; gap: 14px;
+  }
+  .pcard h4{
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: clamp(22px, 1.9vw, 26px);
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+    margin: 0;
+    color: var(--text);
+  }
+  .pcard .year{
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    color: var(--steel);
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
+  .pcard .summary{
+    font-size: 15px;
+    line-height: 1.55;
+    color: var(--text-2);
+    margin: 0;
+    max-width: 52ch;
+  }
+  .pcard .deliverables{ display: flex; flex-wrap: wrap; gap: 6px; margin-top: 2px; }
+  .ftag{
+    font-family: var(--mono);
+    font-size: 9.5px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-2);
+    border: 1px solid var(--hair);
+    background: rgba(255,255,255,0.02);
+    padding: 5px 9px;
+    border-radius: 3px;
+  }
+  .pcard .outcome{
+    margin-top: auto;
+    padding-top: 14px;
+    border-top: 1px solid var(--hair);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+  }
+  .pcard .outcome .lbl{
+    font-family: var(--mono);
+    font-size: 9.5px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--steel);
+    margin-bottom: 6px;
+  }
+  .pcard .outcome .val{
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.3;
+    color: var(--brass);
+  }
+  @media (max-width: 880px){
+    .work-grid{ grid-template-columns: 1fr; }
+  }
+
+  /* ───────── VIDEO MODAL ───────── */
+  .vmodal{
+    position: fixed; inset: 0;
+    z-index: 200;
+    display: none;
+    align-items: flex-start; justify-content: center;
+    padding: clamp(16px, 5vh, 64px) clamp(14px, 4vw, 48px);
+    overflow-y: auto;
+  }
+  .vmodal.open{ display: flex; }
+  .vmodal-scrim{
+    position: fixed; inset: 0;
+    background: rgba(6,6,8,0.82);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    animation: vmFade .3s ease both;
+  }
+  @keyframes vmFade{ from{ opacity: 0; } to{ opacity: 1; } }
+  .vmodal-card{
+    position: relative;
+    width: min(1440px, 92vw);
+    background: #101013;
+    border: 1px solid var(--hair-strong);
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 40px 120px rgba(0,0,0,0.6);
+    /* NOTE: no fill-mode — the transform must NOT persist at rest.
+       A lingering transform on this ancestor establishes a containing
+       block which, with overflow:hidden, traps the <video> fullscreen
+       request inside the card (fullscreen appears to "not work"). */
+    animation: vmRise .36s cubic-bezier(.2,.7,.2,1);
+  }
+  @keyframes vmRise{ from{ opacity: 0; transform: translateY(18px); } to{ opacity: 1; transform: translateY(0); } }
+  @media (prefers-reduced-motion: reduce){
+    .vmodal-card{ animation: none; }
+  }
+  .vmodal-close{
+    position: absolute; top: 14px; right: 14px;
+    z-index: 6;
+    width: 40px; height: 40px;
+    border-radius: 50%;
+    background: rgba(14,14,16,0.7);
+    border: 1px solid var(--hair-strong);
+    color: var(--text);
+    font-size: 20px;
+    cursor: pointer;
+    display: grid; place-items: center;
+    transition: background .2s ease, border-color .2s ease, transform .2s ease;
+  }
+  .vmodal-close:hover{ background: var(--brass); color: #1a1408; border-color: var(--brass); transform: rotate(90deg); }
+  .vmodal-main{
+    display: grid;
+    grid-template-columns: 2.35fr 1fr;
+    align-items: stretch;
+  }
+  .vm-player{
+    position: relative;
+    background: #050507;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border-right: 1px solid var(--hair);
+    align-self: start;
+    min-width: 0;
+    width: 100%;
+  }
+  .vm-player video{ position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; background: #050507; }
+  /* Hard-remove the NATIVE control-bar fullscreen button so the single custom
+     .vm-fs button (top-left) is the ONLY fullscreen affordance. This shadow-DOM
+     pseudo-element works in Chrome / Edge / Safari even when controlslist is
+     ignored (it's the real reason a duplicate, dead button kept appearing). */
+  .vm-player video::-webkit-media-controls-fullscreen-button{ display: none !important; }
+  /* Single explicit fullscreen affordance, top-LEFT of the player so it
+     never collides with the close ✕ (top-right) or the native control bar
+     (bottom). The native fullscreen button is suppressed via controlslist. */
+  .vm-fs{
+    position: absolute; top: 12px; left: 12px; z-index: 4;
+    width: 38px; height: 38px;
+    display: inline-flex; align-items: center; justify-content: center;
+    color: #f4f1ea;
+    background: rgba(8,8,10,0.55);
+    border: 1px solid rgba(255,255,255,0.18);
+    border-radius: 8px;
+    cursor: pointer;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    opacity: 0; transform: translateY(-2px);
+    transition: opacity .25s ease, transform .25s ease, background .2s ease, border-color .2s ease;
+  }
+  .vm-player:hover .vm-fs,
+  .vm-fs:focus-visible{ opacity: 1; transform: translateY(0); }
+  .vm-fs:hover{ background: var(--brass); color: #1a1408; border-color: var(--brass); }
+  /* Touch devices have no hover — keep the button visible. */
+  @media (hover: none){ .vm-fs{ opacity: 1; transform: none; } }
+
+  /* Pseudo-fullscreen: player fills the viewport. Works everywhere, even
+     where the real Fullscreen API is blocked (iframes / embeds). */
+  .vm-player.vm-pseudofs{
+    position: fixed; inset: 0; z-index: 9999;
+    width: 100vw; height: 100vh;
+    border: 0; border-radius: 0;
+    background: #000;
+  }
+  .vm-player.vm-pseudofs video{ object-fit: contain; }
+  .vm-player.vm-pseudofs .vm-fs{ opacity: 1; transform: none; z-index: 10000; }
+  body.vm-pseudofs-lock{ overflow: hidden; }
+  /* In REAL OS fullscreen the container IS the player, so keep the single
+     button visible (the same button toggles back out) and letterbox cleanly.
+     Separate rules per prefix so one unknown pseudo can't drop the whole set. */
+  .vm-player:fullscreen .vm-fs{ opacity: 1; transform: none; z-index: 10000; }
+  .vm-player:-webkit-full-screen .vm-fs{ opacity: 1; transform: none; z-index: 10000; }
+  .vm-player:fullscreen video{ object-fit: contain; }
+  .vm-player:-webkit-full-screen video{ object-fit: contain; }
+  /* placeholder player (no link yet) */
+  .vm-ph{ position: absolute; inset: 0; display: grid; place-items: center; }
+  .vm-ph .tint{ position: absolute; inset: 0; background: radial-gradient(70% 60% at 40% 35%, rgba(184,153,104,0.18), transparent 70%), linear-gradient(180deg, #15161a, #0a0a0e); }
+  .vm-ph .note{
+    position: relative; z-index: 2;
+    text-align: center;
+    display: flex; flex-direction: column; align-items: center; gap: 12px;
+  }
+  .vm-ph .note .ring{
+    width: 60px; height: 60px; border-radius: 50%;
+    border: 1px solid var(--hair-strong);
+    display: grid; place-items: center;
+    color: var(--brass);
+  }
+  .vm-ph .note .ring.lock svg{ width: 22px; height: 22px; }
+  .vm-ph .note .t{
+    font-family: var(--mono);
+    font-size: 10.5px; letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--text-2);
+  }
+  .vm-ph .note .s{
+    font-family: var(--sans);
+    font-size: 12.5px; color: var(--steel); max-width: 30ch; line-height: 1.5;
+  }
+  .vm-meta{
+    padding: clamp(24px, 2.4vw, 34px);
+    display: flex; flex-direction: column; gap: 14px;
+    min-width: 0;
+  }
+  .vm-eyebrow{
+    font-family: var(--mono);
+    font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--brass);
+    display: inline-flex; align-items: center; gap: 10px;
+  }
+  .vm-eyebrow .bar{ width: 18px; height: 1px; background: var(--brass); opacity: 0.6; }
+  .vm-meta h3{
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: clamp(20px, 1.7vw, 26px);
+    line-height: 1.12;
+    letter-spacing: -0.01em;
+    margin: 0;
+    color: var(--text);
+  }
+  .vm-sub{
+    font-family: var(--mono);
+    font-size: 10.5px; letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--steel);
+    line-height: 1.6;
+  }
+  .vm-summary{
+    font-size: 13px; line-height: 1.6; color: var(--text-2); margin: 4px 0 0;
+  }
+  .vm-tags{ display: flex; flex-wrap: wrap; gap: 6px; }
+  .vm-outcomes{
+    display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
+    border-top: 1px solid var(--hair);
+    padding-top: 16px; margin-top: 4px;
+  }
+  .vm-outcomes .lbl{
+    font-family: var(--mono);
+    font-size: 9.5px; letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--steel); margin-bottom: 6px;
+  }
+  .vm-outcomes .val{
+    font-family: var(--serif); font-weight: 400; font-size: 16px; line-height: 1.3; color: var(--brass);
+  }
+  .vm-cs{ margin-top: auto; padding-top: 14px; }
+
+  /* RAIL, more from this client */
+  .vm-rail{
+    border-top: 1px solid var(--hair-strong);
+    padding: clamp(18px, 2vw, 26px) clamp(24px, 2.4vw, 34px) clamp(22px, 2.4vw, 30px);
+    background: rgba(255,255,255,0.012);
+  }
+  .vm-rail.hidden{ display: none; }
+  .vm-rail-head{
+    display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap;
+    font-family: var(--mono);
+    font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--text);
+    margin-bottom: 16px;
+  }
+  .vm-rail-head .sig{ color: var(--brass); }
+  .vm-rail-note{
+    font-family: var(--sans);
+    text-transform: none; letter-spacing: 0;
+    font-size: 12.5px; color: var(--steel);
+    flex-basis: 100%; margin-top: 2px; line-height: 1.5;
+  }
+  .vm-rail-track{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(190px, 1fr);
+    gap: 12px;
+    overflow-x: auto;
+    padding-bottom: 6px;
+    scrollbar-width: thin;
+  }
+  .vm-thumb{
+    text-align: left;
+    background: transparent; border: 0; padding: 0; cursor: pointer;
+    display: flex; flex-direction: column; gap: 8px;
+    color: inherit; font: inherit;
+  }
+  .vm-thumb:disabled{ cursor: default; }
+  .vm-thumb-poster{
+    position: relative;
+    aspect-ratio: 16 / 9;
+    border-radius: 7px;
+    overflow: hidden;
+    border: 1px solid var(--hair);
+    background: #0a0a0c;
+    transition: border-color .2s ease;
+  }
+  .vm-thumb-poster img{ position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  .vm-thumb-poster .g{ position: absolute; inset: 0; }
+  .vm-thumb-poster .g.heritage{ background: radial-gradient(80% 60% at 80% 20%, rgba(184,153,104,0.2), transparent 70%), linear-gradient(180deg,#16130e,#0a0a0e); }
+  .vm-thumb-poster .g.aerial{ background: radial-gradient(80% 60% at 30% 30%, rgba(184,153,104,0.22), transparent 70%), linear-gradient(180deg,#15161a,#0a0a0e); }
+  .vm-thumb-poster .g.recurring{ background: radial-gradient(70% 60% at 50% 60%, rgba(139,155,168,0.16), rgba(184,153,104,0.1) 60%, transparent 80%), linear-gradient(180deg,#121317,#0a0a0e); }
+  .vm-thumb-poster .g.marine{ background: radial-gradient(80% 60% at 70% 70%, rgba(139,155,168,0.22), transparent 70%), linear-gradient(180deg,#10131a,#0a0a0e); }
+  .vm-thumb-poster .g.boardroom{ background: radial-gradient(70% 60% at 50% 40%, rgba(184,153,104,0.16), transparent 70%), linear-gradient(180deg,#1a1612,#0a0a0e); }
+  .vm-thumb-poster .g.infra{ background: radial-gradient(80% 60% at 20% 80%, rgba(139,155,168,0.18), transparent 70%), linear-gradient(180deg,#14171a,#0a0a0e); }
+  .vm-thumb-poster .g.scan{ background: radial-gradient(70% 60% at 40% 50%, rgba(184,153,104,0.16), transparent 70%), linear-gradient(180deg,#17140f,#0a0a0e); }
+  .vm-thumb-poster .pf-bg{ opacity: 0.7; }
+  .vm-thumb.is-active .vm-thumb-poster{ border-color: var(--brass); box-shadow: 0 0 0 1px var(--brass); }
+  .vm-thumb:not(:disabled):hover .vm-thumb-poster{ border-color: rgba(184,153,104,0.5); }
+  .vm-thumb-poster .pl{
+    position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);
+    width: 30px; height: 30px; border-radius: 50%;
+    background: rgba(14,14,16,0.6);
+    border: 1px solid rgba(245,241,234,0.28);
+    display: grid; place-items: center;
+  }
+  .vm-thumb-poster .pl::after{
+    content:""; width:0; height:0;
+    border-left: 7px solid var(--text);
+    border-top: 5px solid transparent; border-bottom: 5px solid transparent;
+    margin-left: 2px;
+  }
+  .vm-thumb-poster .lockchip{
+    position: absolute; inset: 0;
+    display: grid; place-items: center;
+    background: rgba(8,8,10,0.55);
+    color: var(--text-2);
+  }
+  .vm-thumb-poster .lockchip svg{ width: 20px; height: 20px; }
+  .vm-thumb-poster .dur{
+    position: absolute; right: 8px; bottom: 8px;
+    font-family: var(--mono); font-size: 9px; letter-spacing: 0.12em;
+    color: rgba(245,241,234,0.82);
+    background: rgba(14,14,16,0.7);
+    padding: 2px 6px; border-radius: 3px;
+  }
+  .vm-thumb-cap{ display: flex; flex-direction: column; gap: 3px; }
+  .vm-thumb-cap .t{
+    font-family: var(--serif); font-size: 15px; line-height: 1.2; color: var(--text);
+  }
+  .vm-thumb.is-active .vm-thumb-cap .t{ color: var(--brass); }
+  .vm-thumb-cap .d{
+    font-family: var(--mono); font-size: 9.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--steel);
+  }
+
+  @media (max-width: 760px){
+    .vmodal{ padding: 0; }
+    .vmodal-card{ width: 100%; min-height: 100%; border-radius: 0; border-left: 0; border-right: 0; }
+    .vmodal-main{ grid-template-columns: 1fr; }
+    .vm-player{ border-right: 0; border-bottom: 1px solid var(--hair); }
+    .vm-outcomes{ grid-template-columns: 1fr; gap: 12px; }
+  }
+</style>
+
+<!-- ============================================================
+     STRUCTURED DATA · schema.org JSON-LD
+     ============================================================ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://pointcloudvisuals.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Work", "item": "https://pointcloudvisuals.com/work" }
+      ]
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "https://pointcloudvisuals.com/work#page",
+      "name": "Work, Point Cloud Visuals",
+      "url": "https://pointcloudvisuals.com/work",
+      "description": "Reality capture visualisation projects across heritage & culture, aerial mapping & survey, architecture & development, and marine / industrial.",
+      "inLanguage": "en-AU",
+      "isPartOf": { "@id": "https://pointcloudvisuals.com/#website" },
+      "publisher": { "@id": "https://pointcloudvisuals.com/#org" }
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://pointcloudvisuals.com/work#projects",
+      "name": "Reality capture visualisation projects",
+      "itemListOrder": "https://schema.org/ItemListOrderDescending",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Embassy of the Free Mind", "description": "Three-sensor fusion (Leica RTC360, Matterport Pro3, DJI Matrice 4E) into one cinematic walkthrough of an Amsterdam landmark; NL." },
+        { "@type": "ListItem", "position": 2, "name": "Kaptur VR · Historic City Centre", "description": "CAD/BIM rendered in NUBIGON with AI gap-filling where flight was restricted; France." },
+        { "@type": "ListItem", "position": 3, "name": "Phoenix LiDAR Systems", "description": "Sandy Creek flood response, a 140 km² airborne capture (Ranger U580), and a Ranger Flex road-corridor scan; US." },
+        { "@type": "ListItem", "position": 4, "name": "Quiddity Engineering · UAV Survey", "description": "Cinematic UAV flythrough for internal alignment and external ROI; US." },
+        { "@type": "ListItem", "position": 5, "name": "My Digital Buildings", "description": "Monthly pipeline: cinematic flythroughs built from classified point clouds, CAD and BIM; EU." },
+        { "@type": "ListItem", "position": 6, "name": "Heliac · House to Restaurant Conversion", "description": "Point cloud to full BIM with a bilingual short film; EU." },
+        { "@type": "ListItem", "position": 7, "name": "Digital Dry Dock", "description": "Audience-segmented hull-scan films that replaced a static PDF sales tool; UK." },
+        { "@type": "ListItem", "position": 8, "name": "Joe Sparrow Media", "description": "Cinematic films built from a multi-mall scan-to-BIM programme that won the pitch and were reused as the client's own marketing; AU. Most of the programme is under NDA." },
+        { "@type": "ListItem", "position": 9, "name": "Archilink Surveys", "description": "Survey deliverables for institutional and heritage buildings turned into a shareable, bid-winning visual asset; UK. Most work is under NDA." }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav-wrap" data-screen-label="Nav">
+  <nav class="nav" aria-label="Primary">
+    <a class="nav-brand" href="/" aria-label="Point Cloud Visuals home">
+        <img class="mark" src="assets/pcv-mark-white.png" alt="" width="32" height="32" decoding="async" />
+        <span class="wordmark">Point Cloud Visuals</span>
+      </a>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="Work.html" class="is-active">Portfolio</a>
+      <a href="Approach.html">Approach</a>
+      <a href="#cta">Contact</a>
+    </div>
+    <a class="nav-cta" href="#cta">Book a call</a>
+    <button class="nav-hamburger" type="button" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<!-- PAGE HERO -->
+<section class="page-hero" data-screen-label="01 Work hero">
+  <div>
+    <h1>Selected projects, in <em class="brass">full</em>.</h1>
+  </div>
+  <div>
+    <p class="lede">Reality capture studios across four sectors: heritage, aerial mapping, architecture, and marine. Each project started with an existing dataset and a presentation gap, and ended as a cinematic asset that did real commercial work.</p>
+    <div class="meta-row">
+      <span>Active <b>2024-2026</b></span>
+      <span>Sectors <b>4</b></span>
+      <span>Recurring <b>8 in 10</b></span>
+    </div>
+  </div>
+</section>
+
+<!-- FILTERS -->
+<div class="filters" role="tablist" aria-label="Filter projects by sector">
+  <div class="filter-pills" id="filter-pills"></div>
+  <div class="filter-meta">
+    <span class="live-dot" aria-hidden="true"></span>
+    Updated · June 2026
+  </div>
+</div>
+
+<!-- SECTOR BLOCKS (rendered) -->
+<main class="sectors" id="sectors"></main>
+
+<!-- VIDEO MODAL -->
+<div class="vmodal" id="vmodal" aria-hidden="true">
+  <div class="vmodal-scrim" data-close></div>
+  <div class="vmodal-card" role="dialog" aria-modal="true" aria-labelledby="vm-title">
+    <button class="vmodal-close" type="button" data-close aria-label="Close">&times;</button>
+    <div class="vmodal-main">
+      <div class="vm-player" id="vm-player"></div>
+      <div class="vm-meta">
+        <span class="vm-eyebrow" id="vm-eyebrow"><span class="bar"></span></span>
+        <h3 id="vm-title"></h3>
+        <div class="vm-sub" id="vm-sub">MY DIGITAL BUILDINGS · FRANCE · EU · 2025</div>
+        <p class="vm-summary" id="vm-summary"></p>
+        <div class="vm-tags" id="vm-tags"></div>
+        <div class="vm-outcomes" id="vm-outcomes"></div>
+        <div class="vm-cs" id="vm-cs"></div>
+      </div>
+    </div>
+    <div class="vm-rail" id="vm-rail">
+      <div class="vm-rail-head" id="vm-rail-head"></div>
+      <div class="vm-rail-track" id="vm-rail-track"></div>
+    </div>
+  </div>
+</div>
+
+<!-- FINAL CTA -->
+<div class="final-section" id="cta" data-screen-label="Final CTA">
+  <section class="section">
+    <p class="final-eyebrow"><span class="sep"></span>The next step<span class="sep"></span></p>
+    <h2 class="final-title">Let's see what's possible from your <em>dataset</em>.</h2>
+    <p class="final-body">If something in here looks like the kind of asset your studio needs, send the dataset, or a brief description of what you've got. The response covers what we'd build, what it would cost, and what return to expect.</p>
+    <div class="final-buttons">
+      <a class="btn btn-primary" href="https://calendly.com/projects-pointcloudvisuals/30min?month=2026-06" target="_blank" rel="noopener noreferrer">Book a call <span class="arrow">→</span></a>
+      <a class="btn btn-secondary" href="https://tally.so/r/w8WKPz" target="_blank" rel="noopener noreferrer">Request a quote</a>
+    </div>
+    <p class="final-foot">Or write directly to <a href="mailto:projects@pointcloudvisuals.com">projects@pointcloudvisuals.com</a></p>
+  </section>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer" data-screen-label="Footer">
+  <span class="legal">© <span data-year>2026</span> Point Cloud Visuals</span>
+  <div class="nav-mini">
+    <a href="Work.html">Portfolio</a>
+    <a href="Approach.html">Approach</a>
+    <a href="#cta">Contact</a>
+  </div>
+</footer>
+
+<script src="assets/shared.js"></script>
+<script>
+/* ============================================================
+   WORK · data-driven gallery + video viewer
+   ------------------------------------------------------------
+   Edit project content here. One object per CLIENT.
+   A client with >1 video shows a single card in the grid; the
+   viewer reveals the rest under "More from <client>".
+   videos[]: { title, region, year, duration, vid?, tint, summary,
+               tags[], outcomes[[lbl,val]...], locked?, caseStudy? }
+   - vid  : Bunny Stream id. Grid loop uses 720p; modal plays 1080p
+            with sound. Omit = placeholder.
+   - gridVid (on the client): Bunny id for the GRID card's 720p loop
+            only, when it should differ from videos[0] (e.g. the card
+            keeps an old hero loop but the viewer shows other films).
+   - locked: true -> NDA tile (shown in rail, not playable).
+   ============================================================ */
+(function(){
+  var BUNNY = 'https://vz-39886892-05f.b-cdn.net/';
+  var mp4720 = function(id){ return BUNNY + id + '/play_720p.mp4'; };   // grid loop posters
+  var mp4    = function(id){ return BUNNY + id + '/play_1080p.mp4'; };  // modal player (sound on)
+  var poster = function(id){ return BUNNY + id + '/thumbnail.jpg'; };
+
+  var CATS = [
+    { key:'all',      label:'All' },
+    { key:'heritage', label:'Heritage & Culture',        tag:'Heritage' },
+    { key:'aerial',   label:'Aerial Mapping & Survey',   tag:'Aerial Mapping' },
+    { key:'arch',     label:'Architecture & Development', tag:'Architecture' },
+    { key:'marine',   label:'Marine / Industrial',       tag:'Marine · Industrial' }
+  ];
+
+  var PROJECTS = [
+    /* ───── HERITAGE & CULTURE ───── */
+    {
+      client:'3D Scan Service Amsterdam', cat:'heritage', region:'NL', tint:'heritage', year:'2026',
+      card:"Three capture systems: Leica RTC360, Matterport Pro3 and DJI Matrice 4E, fused into a single cinematic walkthrough of one of Amsterdam's most significant cultural landmarks.",
+      videos:[
+        { title:'Cinematic walkthrough', region:'Amsterdam, Netherlands', year:'2026', vid:'4c3d3ea9-260f-4d0f-b8f8-3578766fe4a0', tint:'heritage',
+          summary:"Three capture systems ran in parallel on one of Amsterdam's most significant cultural landmarks: Leica RTC360 terrestrial scanning, Matterport Pro3 reality capture, and DJI Matrice 4E aerial photogrammetry. We fused that data into a single cinematic walkthrough covering interior, exterior, garden, and aerial, landing with every audience the building needed, from the architects and engineers to the Embassy team and a public who will never see the point cloud underneath.",
+          tags:['Multi-sensor fusion','Cinematic walkthrough','Heritage'],
+          outcomes:[['Audiences','One fused dataset, four audiences served'],['Fidelity','Detail preserved at full fidelity']] }
+      ]
+    },
+    {
+      client:'Kaptur VR', cat:'heritage', region:'FR', tint:'scan', year:'2025',
+      card:"A protected historic-centre building where flight limits blocked full context, CAD and BIM rendered in NUBIGON, with AI filling the gaps the drone couldn't reach.",
+      videos:[
+        { title:'Historic City Centre', region:'Historic city centre · France', year:'2025', vid:'72e122ea-6719-4518-9bd5-5fc2f5ca6864', tint:'scan',
+          summary:"A mixed-use building in a protected historic centre, where flight restrictions meant the drone couldn't capture full context. Kaptur VR produced the CAD and BIM deliverables; we rendered them in NUBIGON and used AI to fill the gaps the drone couldn't reach, building a complete narrative rather than a list of technical files. The client used it to present to owners and then reused it as a marketing asset.",
+          tags:['Heritage','AI gap-filling','CAD/BIM render'],
+          outcomes:[['Story','A full site story despite flight limits'],['Reuse','One deliverable: documentation + marketing']] }
+      ]
+    },
+    {
+      client:'Archilink Surveys', cat:'heritage', region:'UK', tint:'heritage', year:'2025',
+      badge:'Selected snippets',
+      railNote:"Most Archilink work is for institutional and government clients under NDA. This is the snippet we're able to show.",
+      card:"Survey deliverables for institutional and heritage buildings, turned into something a government client could actually share with decision-makers, a project record and a bid-winning tool in one.",
+      videos:[
+        { title:'Institutional building · survey film', region:'United Kingdom', year:'2025', vid:'68359807-19f6-4ca8-846e-3991bbc6d82b', tint:'heritage',
+          summary:"Archilink captures institutional and heritage buildings for clients whose brief usually stops at technical reports. We turned their survey deliverables into a clear visual asset their client could share with decision-makers, so the work read as more than a compliance document. It became both a project record and a tool for winning the next tender.",
+          tags:['Institutional','Heritage survey','Tender asset'],
+          outcomes:[['Shareable','A record decision-makers could actually use'],['Tender','Doubled as a bid-winning asset']] },
+        { title:'Government survey programme', locked:true, tint:'heritage' },
+        { title:'Institutional portfolio set', locked:true, tint:'heritage' }
+      ]
+    },
+
+    /* ───── AERIAL MAPPING & SURVEY ───── */
+    {
+      client:'Phoenix LiDAR Systems', cat:'aerial', region:'US', tint:'aerial', year:'2025-2026',
+      badge:'3 films',
+      gridVid:'db330807-2099-4412-8daf-724ea2cc6e5a',
+      card:"Manned-helicopter LiDAR turned into decision-ready, cinematic communication tools, from a Texas flood response to a 140 km² airborne capture and a mobile road-corridor scan.",
+      videos:[
+        { title:'Sandy Creek · Flood Response', region:'Sandy Creek, Texas, USA', year:'2025', vid:'bb56d82d-33f5-4c5d-a93f-6a45ed1b5de3', tint:'aerial',
+          summary:"After the July floods, Phoenix LiDAR flew manned helicopter missions and ran change-detection analysis to reveal damage that wasn't visible from the ground. We took that grayscale public dataset and processed it in NUBIGON into a clear communication tool. The visualisation turned raw survey data into something a community could use to make informed decisions when it mattered most.",
+          tags:['Change detection','Aerial LiDAR','Disaster response'],
+          outcomes:[['Insight','Flood damage revealed beyond ground-level view'],['Public','Grayscale data made decision-ready']] },
+        { title:'Ranger U580 · City-Scale Texas', region:'Texas, USA', year:'2026', vid:'c06d0831-c519-4d41-ad07-346aed9c52ce', tint:'aerial',
+          summary:"140 sqkm of Texas captured with the Ranger U580 airborne system, the largest dataset in the set, with a conversion that ran over 8 hours on current hardware. Built for Phoenix's Geo Week 2026 booth, every frame comes straight from the point cloud, no mesh conversion or modelling. Rendered cinematically in NUBIGON to hold a viewer at city scale where most scanner demos lose them.",
+          tags:['Airborne LiDAR','City-scale dataset','Trade show asset'],
+          outcomes:[['Scale','140 sqkm rendered direct from point cloud'],['Booth','Played on loop at the Geo Week booth']] },
+        { title:'Ranger Flex · Road Corridor Scan', region:'Texas, USA', year:'2026', vid:'0d11b7f5-be54-455c-a8c6-f56d61177337', tint:'aerial',
+          summary:"A road corridor scan through a neighbourhood, captured with the Ranger Flex and built as the first of two pieces for Phoenix's Geo Week 2026 booth. The film leans into what the sensor actually records, moving through the corridor while highlighting RGB and intensity in the raw point cloud. No mesh, no modelling, just the dataset rendered cinematically in NUBIGON, so a booth visitor sees what the data looks like rather than a live screen recording in processing software.",
+          tags:['Corridor mapping','RGB + intensity','Trade show asset'],
+          outcomes:[['Sensor','Sensor data shown cinematically, not a screen capture'],['Booth','Anchored the Geo Week booth presence']] }
+      ]
+    },
+    {
+      client:'Quiddity Engineering', cat:'aerial', region:'US', tint:'infra', year:'2025',
+      gridVid:'9fabbfb7-ebc5-441d-8303-38154303afa3',
+      card:"A UAV survey engineered into a cinematic flythrough that moves through the exact scenarios where the project's advantages matter, for both internal alignment and external ROI.",
+      videos:[
+        { title:'UAV Survey · Cinematic flythrough', region:'United States', year:'2025', vid:'7953abbf-5240-43c7-bffe-d0a65be9f76c', tint:'infra',
+          summary:"A UAV survey that most teams would model and file away. Working with Blake Horelica's team, we engineered it into a cinematic flythrough in NUBIGON that moves through the exact scenarios where the project's advantages matter. It created two value streams from one dataset: internal alignment, letting non-technical stakeholders visit the site instantly, and external ROI, turning survey data into a marketing asset that shortens the payback on the capture.",
+          tags:['UAV survey','Cinematic flythrough','Stakeholder comms'],
+          outcomes:[['Alignment','Non-technical teams aligned, no 2D plans'],['ROI','Capture cost recovered faster through reuse']] }
+      ]
+    },
+
+    /* ───── ARCHITECTURE & DEVELOPMENT ───── */
+    {
+      client:'My Digital Buildings', cat:'arch', region:'FR', tint:'recurring', year:'2025-2026',
+      badge:'Monthly pipeline',
+      gridVid:'55aa0e31-57af-4628-8f47-2c75e290b4d1',
+      card:"An ongoing pipeline of cinematic flythroughs built from their classified point clouds, CAD and BIM, produced before the first client meeting so the conversation starts on value, not price.",
+      videos:[
+        { title:'Apartment building · multi-stage scan', region:'France · EU', year:'2025', vid:'d71026c7-7920-48e2-86a3-8d3e3c9dcdff', tint:'recurring',
+          summary:"Laser scans taken across successive construction stages, with the as-built BIM overlaid against the final scan to show where reality matched the design and where it didn't. The developer could walk the deviations visually instead of reading a report, changing the conversation from \u201Ctrust our measurements\u201D to \u201Csee it yourself.\u201D",
+          tags:['Multi-stage capture','As-built BIM overlay','Deviation walk'],
+          outcomes:[['Verification','Reality vs design, walked visually'],['Trust','\u201CSee it yourself,\u201D not \u201Ctrust us\u201D']] },
+        { title:'City-Centre Multi-Family', region:'France · EU', year:'2026', duration:'~1 min', vid:'0e88a69f-adbb-4ddd-b614-9869762e956f', tint:'recurring',
+          summary:"A standard multi-unit residential building, the kind of functional project that carries most AEC revenue but never wins beauty contests. Working with Mathias Alves' team, we took a routine dataset and engineered it into a reusable showcase using a hybrid stack: NUBIGON for the rendering, with AI tools handling seamless transitions between reality and the raw capture. The result explains the what and why of the site in about a minute, so the team stops re-explaining the same things to every client.",
+          tags:['Multi-family','Hybrid AI workflow','Reusable showcase'],
+          outcomes:[['Speed','Site explained in ~1 min'],['Reuse','A routine dataset turned into a repeatable sales asset']] },
+        { title:'Villa · France', region:'France · EU', year:'2025', vid:'16b81983-cb6f-43ce-a304-9e3425590d61', tint:'recurring',
+          summary:"A villa that helped the team never get compared on price again. We classified and colour-separated the point cloud into Revit-ready layers, giving them a far stronger way to tell the story of their own CAD workflow, and tied it together with a flythrough in NUBIGON \u2014 all ready before any meeting. By the time clients sat down, the conversation had moved from cost to how soon they could see their own asset like this.",
+          tags:['Classified point cloud','Revit-ready layers','Flythrough'],
+          outcomes:[['Conversation','Moved off price'],['Timing','Value shown before the first meeting']] },
+        { title:'Farm Buildings', region:'France · EU', year:'2026', vid:'94feb46c-5672-4cd0-9075-731cb6b4e10b', tint:'recurring',
+          summary:"A full digital handover, laser scans, photogrammetry, CAD, BIM, and reports, that means a lot to the team who built it and very little to a client looking at it cold. Using data captured by Mathias Alves' team, we turned that dense deliverable into a clear visual narrative. The clip helps stakeholders immediately grasp what the work is actually worth, moving the data from technical to actionable.",
+          tags:['Digital handover','Visual narrative','Stakeholder comms'],
+          outcomes:[['Legibility','A dense handover made instantly legible'],['Value','Client value communicated without a technical walkthrough']] }
+      ]
+    },
+    {
+      client:'Heliac Engineering', cat:'arch', region:'FR', tint:'boardroom', year:'2025',
+      card:"A house-to-restaurant conversion documented from point cloud to full BIM, finished with a bilingual short film that travelled far beyond the team's usual reach.",
+      videos:[
+        { title:'House to Restaurant Conversion', region:'France · EU', year:'2025', vid:'e17d815b-98cd-4151-8bb6-fd661e3f5dcd', tint:'boardroom',
+          summary:"A residential building being converted to a restaurant, where every dimension and service route had to be documented before the design team could start. Heliac took it from point cloud to full BIM with floor plans, sections, and elevations. We produced the short film with bilingual captions, and the original post by Alexandre Carchi reached far beyond what either of us expected.",
+          tags:['Adaptive reuse','Point cloud to BIM','Bilingual captions'],
+          outcomes:[['Package','A design-ready documentation set'],['Reach','Post reach well above the norm']] }
+      ]
+    },
+    {
+      client:'Joe Sparrow Media', cat:'arch', region:'AU', tint:'boardroom', year:'2026 · ongoing',
+      badge:'Selected snippets',
+      railNote:"Most of the Joe Sparrow programme is under NDA. These are the snippets we're able to show.",
+      card:"A globally recognised developer invited the scanning team to pitch for a multi-mall scan-to-BIM programme. We built cinematic films from their best projects, they won the contract, then asked to reuse the films as their own marketing.",
+      videos:[
+        { title:'Multi-mall pitch films', region:'Australia', year:'2026', vid:'6d867fbc-0d51-4e6e-8fbd-6a40c67f472e', tint:'boardroom',
+          summary:"A globally recognised developer invited the scanning team to pitch for a multi-mall scan-to-BIM programme, capture turned into BIM and CAD to speed up fit-out and cut errors. They wanted to pitch with more than screenshots, so we built a series of cinematic videos from their best projects. The boardroom result: they won the contract, then asked for the videos to reuse in their own marketing. That reuse opened the door to further projects together.",
+          tags:['Scan-to-BIM','Pitch asset','Multi-site programme'],
+          outcomes:[['Result','Won a multi-mall contract from the pitch'],['Reuse','Client reused the videos as their own marketing']] },
+        { title:'Mall programme · capture set', locked:true, tint:'boardroom' },
+        { title:'Scan-to-BIM delivery', locked:true, tint:'boardroom' },
+        { title:'Client marketing cut', locked:true, tint:'boardroom' }
+      ]
+    },
+
+    /* ───── MARINE / INDUSTRIAL ───── */
+    {
+      client:'Digital Dry Dock', cat:'marine', region:'UK', tint:'marine', year:'2025-2026',
+      badge:'Selected snippets',
+      card:"Three audience-segmented films built from a single hull scan, cut for yacht owners, insurers and refit yards, that replaced a static PDF as the primary sales tool.",
+      railNote:"Most Digital Dry Dock work is under NDA. These are the snippets we're able to show.",
+      videos:[
+        { title:'Hull scan · 3 audience films', region:'United Kingdom', year:'2025', duration:'2:00 each', vid:'ab84a3e5-3094-454c-bf9c-83adbdb26520', tint:'marine',
+          summary:"Three audience-segmented films built from a single hull scan dataset, cut for yacht owners, insurers, and refit yards. Each version speaks to what that audience needs to see. The set replaced a static PDF brochure as the company's primary sales tool.",
+          tags:['Audience-segmented films','Hull scan','Sales asset'],
+          outcomes:[['Audiences','One dataset, three buyer audiences'],['Sales','Replaced the PDF as primary sales tool']] },
+        { title:'4 Vessel Fleet showcase', locked:true, tint:'marine' },
+        { title:'Race Yachts', locked:true, tint:'marine' },
+        { title:'Cruise Ship', locked:true, tint:'marine' },
+        { title:'Military and Industrial', locked:true, tint:'marine' }
+      ]
+    }
+  ];
+
+  /* ---- helpers ---- */
+  var catLabel = {}, catTag = {};
+  CATS.forEach(function(c){ catLabel[c.key] = c.label; catTag[c.key] = c.tag || c.label; });
+
+  function tags(arr){ return (arr||[]).map(function(t){ return '<span class="ftag">'+t+'</span>'; }).join(''); }
+  function outcomes(arr){
+    return (arr||[]).map(function(o){
+      return '<div><div class="lbl">'+o[0]+'</div><div class="val">'+o[1]+'</div></div>';
+    }).join('');
+  }
+  var LOCK = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>';
+  var FILM = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 4h16v16H4z" fill="none"/><path d="M9 8l6 4-6 4V8z"/></svg>';
+
+  /* ---- render grid ---- */
+  var sectorsEl = document.getElementById('sectors');
+  var groups = {};
+  PROJECTS.forEach(function(p){ (groups[p.cat] = groups[p.cat] || []).push(p); });
+
+  CATS.filter(function(c){ return c.key !== 'all'; }).forEach(function(c, ci){
+    var items = groups[c.key] || [];
+    if(!items.length) return;
+    var block = document.createElement('section');
+    block.className = 'cat-block';
+    block.dataset.cat = c.key;
+    var n = String(ci+1).padStart(2,'0');
+    var cards = items.map(function(p){ return cardHTML(p); }).join('');
+    block.innerHTML =
+      '<div class="cat-head">'+
+        '<div class="lhs">'+
+          '<h2>'+c.label+'</h2>'+
+        '</div>'+
+        '<span class="ct">'+items.length+' '+(items.length===1?'client':'clients')+'</span>'+
+      '</div>'+
+      '<div class="work-grid">'+cards+'</div>';
+    sectorsEl.appendChild(block);
+  });
+
+  function cardHTML(p){
+    var v0 = p.videos[0];
+    var gid = p.gridVid || v0.vid;
+    var posterHTML = gid
+      ? '<video class="loop" muted loop playsinline preload="none" controlslist="nodownload" disablepictureinpicture oncontextmenu="return false" poster="'+poster(gid)+'" data-src="'+mp4720(gid)+'" aria-hidden="true"></video>'
+      : '<div class="tint"></div><div class="pf-bg"></div>';
+    var badge = '';
+    if(p.badge){
+      var muted = (p.badge.indexOf('snippet')>=0);
+      badge = '<span class="vbadge'+(muted?' muted':'')+'">'+FILM+p.badge+'</span>';
+    }
+    return ''+
+    '<button class="pcard '+p.tint+'" type="button" data-client="'+p.client+'" data-sector="'+p.cat+'" aria-label="Open '+p.client+'">'+
+      '<div class="poster">'+
+        posterHTML+
+        '<div class="vig-bg"></div>'+
+        '<span class="sector-tag">'+catTag[p.cat]+'</span>'+
+        '<span class="flag">'+p.region+'</span>'+
+        '<span class="play" aria-hidden="true"></span>'+
+        badge+
+      '</div>'+
+      '<div class="body">'+
+        '<div class="row1"><h4>'+p.client+'</h4><span class="year">'+p.year+'</span></div>'+
+        '<p class="summary">'+p.card+'</p>'+
+        '<div class="deliverables">'+tags(v0.tags)+'</div>'+
+        '<div class="outcome">'+outcomes(v0.outcomes)+'</div>'+
+      '</div>'+
+    '</button>';
+  }
+
+  /* ---- filter pills ---- */
+  var pillsEl = document.getElementById('filter-pills');
+  CATS.forEach(function(c){
+    var count = c.key==='all' ? PROJECTS.length : (groups[c.key]||[]).length;
+    var b = document.createElement('button');
+    b.className = 'filter-pill' + (c.key==='all' ? ' is-active' : '');
+    b.type = 'button';
+    b.dataset.filter = c.key;
+    var full  = c.key==='all' ? 'All' : c.label;
+    var short = c.key==='all' ? 'All' : (c.tag || c.label);
+    b.innerHTML = '<span class="lbl-full">'+full+'</span><span class="lbl-short">'+short+'</span> <span class="ct">'+String(count).padStart(2,'0')+'</span>';
+    pillsEl.appendChild(b);
+  });
+  pillsEl.addEventListener('click', function(e){
+    var b = e.target.closest('.filter-pill'); if(!b) return;
+    pillsEl.querySelectorAll('.filter-pill').forEach(function(o){ o.classList.remove('is-active'); });
+    b.classList.add('is-active');
+    var f = b.dataset.filter;
+    document.querySelectorAll('.cat-block').forEach(function(blk){
+      blk.classList.toggle('hidden', !(f==='all' || blk.dataset.cat===f));
+    });
+  });
+
+  /* ============================================================
+     VIDEO MODAL
+     ============================================================ */
+  var byClient = {};
+  PROJECTS.forEach(function(p){ byClient[p.client] = p; });
+
+  var modal   = document.getElementById('vmodal');
+  var elPlayer= document.getElementById('vm-player');
+  var elEye   = document.getElementById('vm-eyebrow');
+  var elTitle = document.getElementById('vm-title');
+  var elSub   = document.getElementById('vm-sub');
+  var elSum   = document.getElementById('vm-summary');
+  var elTags  = document.getElementById('vm-tags');
+  var elOut   = document.getElementById('vm-outcomes');
+  var elCs    = document.getElementById('vm-cs');
+  var elRail  = document.getElementById('vm-rail');
+  var elRailHead = document.getElementById('vm-rail-head');
+  var elRailTrack= document.getElementById('vm-rail-track');
+  var current = null, lastFocus = null;
+
+  function playerHTML(v){
+    if(v.locked){
+      return '<div class="vm-ph"><div class="tint"></div><div class="note">'+
+        '<div class="ring lock">'+LOCK+'</div>'+
+        '<div class="t">Under NDA</div>'+
+        '<div class="s">This work is covered by a client confidentiality agreement and can\u2019t be shown publicly.</div>'+
+        '</div></div>';
+    }
+    if(v.vid){
+      // sd:true → 720p-only (same file as case studies): play 720p and block fullscreen.
+      // default → real 1080p rendition: serve 1080p with fullscreen enabled.
+      var src = v.sd ? mp4720(v.vid) : mp4(v.vid);
+      // Always suppress the NATIVE fullscreen button — we provide our own
+      // single button (top-left) so there's never a duplicate, and ours
+      // has a fallback for contexts where real fullscreen is blocked.
+      var cl  = 'nodownload nofullscreen';
+      var fsBtn = v.sd ? '' : '<button type="button" class="vm-fs" aria-label="View fullscreen" title="Fullscreen">'+
+        '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"/></svg>'+
+        '</button>';
+      return '<video controls autoplay playsinline controlslist="'+cl+'" disablepictureinpicture oncontextmenu="return false" poster="'+poster(v.vid)+'" src="'+src+'"></video>'+fsBtn;
+    }
+    return '<div class="vm-ph"><div class="tint"></div><div class="note">'+
+      '<div class="ring">'+FILM+'</div>'+
+      '<div class="t">Showreel link, coming soon</div>'+
+      '<div class="s">'+(v.pending?'Part of an ongoing pipeline, more titles being added.':'Video for this project is being prepared for the site.')+'</div>'+
+      '</div></div>';
+  }
+
+  function setVideo(p, i){
+    var v = p.videos[i];
+    current = { p:p, i:i };
+    // player
+    var old = elPlayer.querySelector('video'); if(old){ old.muted = true; old.pause(); }
+    elPlayer.innerHTML = playerHTML(v);
+    var nv = elPlayer.querySelector('video');
+    if(nv && v.vid){ var pr = nv.play(); if(pr && pr.catch){ pr.catch(function(){}); } }
+    // ONE fullscreen button, three tiers — tried in the order most likely to
+    // give a REAL OS fullscreen, degrading only when the platform forbids it:
+    //   1. Real Fullscreen API on the PLAYER CONTAINER (desktop + Android).
+    //      Fullscreening the container (not the bare <video>) keeps our single
+    //      button on top, so the SAME button toggles back out.
+    //   2. iOS Safari: the <video> element's own native fullscreen
+    //      (webkitEnterFullscreen) — works even when the document Fullscreen
+    //      API is disabled, because it isn't the document API.
+    //   3. CSS pseudo-fullscreen (fill the viewport) — last resort for
+    //      contexts that block BOTH of the above (an embed/iframe whose parent
+    //      omitted allowfullscreen, e.g. this in-app preview).
+    var realFsEl = function(){ return document.fullscreenElement || document.webkitFullscreenElement; };
+    var goFs = function(){
+      if(!nv) return;
+      // Toggle OUT if already fullscreen in any mode.
+      if(elPlayer.classList.contains('vm-pseudofs')){ exitPseudo(); return; }
+      if(realFsEl()){ (document.exitFullscreen || document.webkitExitFullscreen || function(){}).call(document); return; }
+      // iOS: only the <video> can fullscreen, and it ignores document policy.
+      if(!document.fullscreenEnabled && nv.webkitEnterFullscreen){
+        try{ nv.webkitEnterFullscreen(); return; }catch(e){}
+      }
+      // Standards path: fullscreen the container.
+      var req = elPlayer.requestFullscreen || elPlayer.webkitRequestFullscreen;
+      if(document.fullscreenEnabled && req){
+        var pr = req.call(elPlayer);
+        if(pr && pr.catch){ pr.catch(enterPseudo); }
+        return;
+      }
+      // Some iOS builds report fullscreenEnabled true but only honour the video.
+      if(nv.webkitEnterFullscreen){ try{ nv.webkitEnterFullscreen(); return; }catch(e){} }
+      enterPseudo();
+    };
+    var fsBtn = elPlayer.querySelector('.vm-fs');
+    if(fsBtn) fsBtn.addEventListener('click', function(e){ e.preventDefault(); goFs(); });
+    if(nv) nv.addEventListener('dblclick', goFs);
+    // meta
+    elEye.innerHTML = '<span class="bar"></span>'+catLabel[p.cat];
+    elTitle.textContent = v.title;
+    var subBits = [p.client, v.region, v.year, v.duration].filter(Boolean);
+    elSub.textContent = subBits.join('  ·  ');
+    elSum.textContent = v.summary || '';
+    elTags.innerHTML = tags(v.tags);
+    elOut.innerHTML = outcomes(v.outcomes);
+    elCs.innerHTML = '';
+    // rail active state
+    elRailTrack.querySelectorAll('.vm-thumb').forEach(function(t){
+      t.classList.toggle('is-active', parseInt(t.dataset.i,10)===i);
+    });
+  }
+
+  function thumbHTML(p, v, i){
+    var inner;
+    if(v.vid){
+      inner = '<img src="'+poster(v.vid)+'" alt="" loading="lazy" /><span class="pl"></span>';
+    } else if(v.locked){
+      inner = '<div class="g '+(v.tint||p.tint)+'"></div><span class="lockchip">'+LOCK+'</span>';
+    } else {
+      inner = '<div class="g '+(v.tint||p.tint)+'"></div><div class="pf-bg"></div><span class="pl"></span>';
+    }
+    if(v.duration && !v.locked){ inner += '<span class="dur">'+v.duration+'</span>'; }
+    var capD = v.locked ? 'Under NDA' : (v.duration || v.year || '');
+    return '<button class="vm-thumb" type="button" data-i="'+i+'"'+(v.locked?' disabled':'')+'>'+
+      '<div class="vm-thumb-poster">'+inner+'</div>'+
+      '<div class="vm-thumb-cap"><span class="t">'+v.title+'</span><span class="d">'+capD+'</span></div>'+
+    '</button>';
+  }
+
+  // CSS pseudo-fullscreen (fallback when real fullscreen is blocked).
+  function enterPseudo(){
+    elPlayer.classList.add('vm-pseudofs');
+    document.body.classList.add('vm-pseudofs-lock');
+    var b = elPlayer.querySelector('.vm-fs');
+    if(b){ b.setAttribute('aria-label','Exit fullscreen'); b.title = 'Exit fullscreen'; }
+  }
+  function exitPseudo(){
+    if(!elPlayer.classList.contains('vm-pseudofs')) return;
+    elPlayer.classList.remove('vm-pseudofs');
+    document.body.classList.remove('vm-pseudofs-lock');
+    var b = elPlayer.querySelector('.vm-fs');
+    if(b){ b.setAttribute('aria-label','View fullscreen'); b.title = 'Fullscreen'; }
+  }
+  // Keep the single button's label in sync when REAL fullscreen is entered/exited
+  // by any route (button, Esc, the system gesture). Bound once at module scope.
+  function syncFsLabel(){
+    var fsEl = document.fullscreenElement || document.webkitFullscreenElement;
+    var inFs = !!fsEl && fsEl === elPlayer;
+    var b = elPlayer.querySelector('.vm-fs');
+    if(!b) return;
+    b.setAttribute('aria-label', inFs ? 'Exit fullscreen' : 'View fullscreen');
+    b.title = inFs ? 'Exit fullscreen' : 'Fullscreen';
+  }
+  document.addEventListener('fullscreenchange', syncFsLabel);
+  document.addEventListener('webkitfullscreenchange', syncFsLabel);
+
+  function openModal(client, startIndex){
+    var p = byClient[client]; if(!p) return;
+    lastFocus = document.activeElement;
+    // rail
+    var playable = p.videos.filter(function(v){ return !v.locked; }).length;
+    if(p.videos.length > 1){
+      elRail.classList.remove('hidden');
+      var sig = p.badge && p.badge.indexOf('snippet')>=0 ? 'selected work' : 'returning work';
+      elRailHead.innerHTML = 'More from '+p.client+' <span class="sig">· '+sig+'</span>'+
+        (p.railNote ? '<span class="vm-rail-note">'+p.railNote+'</span>' : '');
+      elRailTrack.innerHTML = p.videos.map(function(v,i){ return thumbHTML(p,v,i); }).join('');
+      elRailTrack.querySelectorAll('.vm-thumb').forEach(function(t){
+        if(t.disabled) return;
+        t.addEventListener('click', function(){ setVideo(p, parseInt(t.dataset.i,10)); });
+      });
+    } else {
+      elRail.classList.add('hidden');
+      elRailTrack.innerHTML = '';
+    }
+    setVideo(p, startIndex||0);
+    modal.classList.add('open');
+    modal.setAttribute('aria-hidden','false');
+    document.body.style.overflow = 'hidden';
+    document.querySelector('.vmodal-close').focus();
+    // Push a history entry so a single Back press (esp. on mobile) closes
+    // the lightbox and returns to the portfolio, instead of leaving the page.
+    if(!(history.state && history.state.pcvModal)){
+      history.pushState({pcvModal:true}, '');
+    }
+  }
+
+  function closeModal(fromPop){
+    if(!modal.classList.contains('open')) return;
+    exitPseudo();
+    var v = elPlayer.querySelector('video'); if(v){ v.muted = true; v.pause(); }
+    elPlayer.innerHTML = '';
+    modal.classList.remove('open');
+    modal.setAttribute('aria-hidden','true');
+    document.body.style.overflow = '';
+    if(lastFocus && lastFocus.focus){ lastFocus.focus(); }
+    current = null;
+    // If we still own the pushed history entry and this close wasn't already
+    // triggered by Back, consume that entry so the URL/history stays clean.
+    if(!fromPop && history.state && history.state.pcvModal){
+      history.back();
+    }
+  }
+
+  // Back button (or swipe-back) while the lightbox is open just closes it.
+  window.addEventListener('popstate', function(){
+    if(modal.classList.contains('open')) closeModal(true);
+  });
+
+  // open from cards
+  sectorsEl.addEventListener('click', function(e){
+    var card = e.target.closest('.pcard'); if(!card) return;
+    openModal(card.dataset.client, 0);
+  });
+  // close handlers
+  modal.addEventListener('click', function(e){
+    if(e.target.hasAttribute('data-close')) closeModal();
+  });
+  document.addEventListener('keydown', function(e){
+    if(e.key!=='Escape' || !modal.classList.contains('open')) return;
+    // Esc exits pseudo-fullscreen first, then closes the modal.
+    if(elPlayer.classList.contains('vm-pseudofs')){ exitPseudo(); }
+    else { closeModal(); }
+  });
+})();
+</script>
+<script src="assets/enhance.js"></script>
+</body>
+</html>

@@ -1,0 +1,1729 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Approach: Studio, process &amp; pricing · Point Cloud Visuals</title>
+<meta name="description" content="A small, growing Melbourne studio, led by registered architect Edwin Boer. Five-step approach from dataset review to deployment. Three pricing tiers in AUD, single project from $6,500, quarterly pipeline from $5,200/mo, annual partnership from $9,800/mo. Add-on prices in the open." />
+<meta name="keywords" content="point cloud visualisation pricing, LiDAR visualisation process, reality capture deliverables, scan-to-cinematic workflow, retainer surveying studio, fixed-fee LiDAR visuals" />
+<meta name="author" content="Edwin Boer, Registered Architect" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+<link rel="canonical" href="https://pointcloudvisuals.com/approach" />
+<link rel="icon" type="image/png" href="assets/pcv-mark-white.png" />
+<link rel="apple-touch-icon" href="assets/pcv-mark-white.png" />
+<link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+<meta name="theme-color" content="#0E0E10" />
+<meta name="color-scheme" content="dark" />
+
+<!-- OPEN GRAPH -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Point Cloud Visuals" />
+<meta property="og:title" content="Approach, Process &amp; pricing · Point Cloud Visuals" />
+<meta property="og:description" content="Five-step rhythm from dataset review to deployment. Pricing in the open. Single project from $6,500 AUD. Recurring pipelines for studios scanning monthly." />
+<meta property="og:url" content="https://pointcloudvisuals.com/approach" />
+<meta property="og:image" content="https://pointcloudvisuals.com/og-approach.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:locale" content="en_AU" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Approach, Point Cloud Visuals" />
+<meta name="twitter:description" content="Process, deliverables, pricing tiers, add-ons. No black box." />
+<meta name="twitter:image" content="https://pointcloudvisuals.com/og-approach.jpg" />
+
+<!-- AI / LLM DISCOVERABILITY -->
+<link rel="alternate" type="text/plain" title="llms.txt" href="/llms.txt" />
+<meta name="ai:summary" content="Point Cloud Visuals is a small, steadily growing studio in Melbourne led by Edwin Boer, a registered architect (OAR since 2020) who spent six years specifying scans from the architect's side of the table before opening PCV in 2024. The approach page combines studio overview with the five-step engagement rhythm: (1) dataset review, free, NDA on request; (2) scope and written proposal within 3 working days; (3) production, typically 5-8 days; (4) delivery with two review rounds; (5) deployment guidance. Three pricing tiers in AUD: Single Project from $6,500, Quarterly Pipeline from $5,200/month, Annual Partner from $9,800/month. Add-ons priced in the open. Every quote is fixed-fee. Winner of the 2025 3Dise Visualization Contest, and recognised by APAC Insider as Best Point Cloud Visualisation Specialist in Australia (2026)." />
+<meta name="ai:scope" content="Founder biography, studio principles, production process, deliverable formats (flythrough, multi-channel package, recurring pipeline), pricing tiers, add-on services and prices, recurring partnership economics, adjacent engagements (speaking, consulting), contract FAQ." />
+<meta name="ai:audience" content="Reality capture studio owners pricing visualisation work, procurement leads at AEC firms, anyone evaluating LiDAR cinematic production partners or researching Edwin Boer's credentials." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/shared.css" />
+
+<style>
+  /* ───────── APPROACH · page-specific ───────── */
+
+  /* ───────── THE STUDIO (merged from About) ───────── */
+  .studio-section{ border-top: 1px solid var(--hair); }
+  .studio-grid{
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+    gap: clamp(32px, 5vw, 72px);
+    align-items: start;
+  }
+  .portrait{
+    position: relative;
+    aspect-ratio: 4 / 5;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #0a0a0c;
+    border: 1px solid var(--hair);
+  }
+  .portrait .ph{
+    position: absolute; inset: 0;
+    background:
+      repeating-linear-gradient(135deg, rgba(245,241,234,0.04) 0 2px, transparent 2px 14px),
+      linear-gradient(180deg, #15151a 0%, #0c0c10 100%);
+  }
+  /* Real founder photo for the Approach page. Slightly cooler in tone
+     (event lighting was blue), pulled back a touch toward warm so it
+     reads naturally next to the brass accents. */
+  .portrait .ph-img{
+    position: absolute; inset: 0;
+    width: 100%; height: 100%;
+    object-fit: cover;
+    object-position: 50% 35%;
+    display: block;
+    filter: saturate(0.95) contrast(1.02);
+  }
+  .portrait .ph-img ~ .caption{
+    z-index: 2;
+    background: linear-gradient(180deg, rgba(14,14,16,0) 0%, rgba(14,14,16,0.7) 100%);
+    left: 0; right: 0; bottom: 0;
+    padding: 32px 16px 14px;
+  }
+  .portrait .ph-img ~ .corner{ z-index: 2; }
+  .portrait .corner{
+    position: absolute; width: 16px; height: 16px;
+    border: 1px solid var(--brass); opacity: 0.7;
+  }
+  .portrait .corner.tl{ top: 16px; left: 16px; border-right: 0; border-bottom: 0; }
+  .portrait .corner.br{ bottom: 16px; right: 16px; border-left: 0; border-top: 0; }
+  .portrait .label{
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    font-family: var(--mono);
+    font-size: 10.5px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--steel);
+    background: rgba(14,14,16,0.65);
+    padding: 8px 14px;
+    border: 1px solid var(--hair-strong);
+    border-radius: 3px;
+    white-space: nowrap;
+  }
+  .portrait .caption{
+    position: absolute; left: 16px; bottom: 16px;
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: rgba(245,241,234,0.55);
+  }
+  .studio-copy{ display: flex; flex-direction: column; gap: 20px; }
+  .studio-copy p{
+    font-size: 17px;
+    line-height: 1.7;
+    color: var(--text-2);
+    margin: 0;
+    max-width: 58ch;
+  }
+  .studio-copy p strong{
+    font-weight: 500;
+    color: var(--text);
+  }
+  .studio-creds{
+    margin-top: 8px;
+    padding-top: 22px;
+    border-top: 1px solid var(--hair);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px 22px;
+  }
+  .sc-item{
+    display: flex; flex-direction: column;
+    gap: 4px;
+  }
+  .sc-item .lbl{
+    font-family: var(--mono);
+    font-size: 9.5px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--steel);
+  }
+  .sc-item .val{
+    font-family: var(--sans);
+    font-size: 14px;
+    color: var(--text);
+    line-height: 1.45;
+  }
+  .sc-item .val em{
+    font-style: italic;
+    color: var(--brass);
+    font-weight: 400;
+  }
+  @media (max-width: 900px){
+    .studio-grid{ grid-template-columns: 1fr; gap: 28px; }
+    .portrait{ aspect-ratio: 5/4; max-height: 50vh; }
+  }
+
+  /* ───────── PRINCIPLES (merged from About) ───────── */
+  .principles-section{ border-top: 1px solid var(--hair); }
+  .principles-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    border-top: 1px solid var(--hair);
+    border-bottom: 1px solid var(--hair);
+  }
+  .principle{
+    padding: clamp(24px, 3vw, 36px) clamp(20px, 2.4vw, 28px);
+    display: flex; flex-direction: column;
+    gap: 12px;
+    border-right: 1px solid var(--hair);
+    min-height: 260px;
+    position: relative;
+  }
+  .principle:last-child{ border-right: 0; }
+  .principle .pnum{
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.24em;
+    color: var(--steel);
+    font-variant-numeric: tabular-nums;
+  }
+  .principle h3{
+    font-family: var(--serif);
+    font-weight: 300;
+    font-size: clamp(20px, 1.9vw, 24px);
+    line-height: 1.15;
+    letter-spacing: -0.015em;
+    margin: 0;
+    color: var(--text);
+    max-width: 18ch;
+    text-wrap: balance;
+  }
+  .principle h3 em{ font-style: italic; color: var(--brass); }
+  .principle p{
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.55;
+    color: var(--text-2);
+  }
+  @media (max-width: 1080px){
+    .principles-grid{ grid-template-columns: repeat(2, 1fr); }
+    .principle{ border-right: 1px solid var(--hair); }
+    .principle:nth-child(2n){ border-right: 0; }
+    .principle:nth-child(n+3){ border-top: 1px solid var(--hair); }
+    .principle{ min-height: auto; }
+  }
+  @media (max-width: 600px){
+    .principles-grid{ grid-template-columns: 1fr; }
+    .principle{ border-right: 0 !important; }
+    .principle + .principle{ border-top: 1px solid var(--hair); }
+  }
+
+  /* ───────── ACTIVELY ENGAGING IN (merged from About) ───────── */
+  .also-section{
+    border-top: 1px solid var(--hair);
+    background:
+      radial-gradient(60% 80% at 80% 30%, rgba(184,153,104,0.05), transparent 70%);
+  }
+  .also-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: clamp(20px, 2.4vw, 32px);
+  }
+  .also-card{
+    border: 1px solid var(--hair);
+    border-radius: 8px;
+    padding: clamp(24px, 3vw, 36px);
+    background: rgba(255,255,255,0.012);
+    display: flex; flex-direction: column; gap: 16px;
+    transition: border-color .3s ease, background .3s ease, transform .3s ease;
+  }
+  .also-card:hover{
+    border-color: rgba(184,153,104,0.35);
+    background: rgba(255,255,255,0.02);
+    transform: translateY(-3px);
+  }
+  .also-card .num{
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    color: var(--brass);
+    font-variant-numeric: tabular-nums;
+  }
+  .also-card h3{
+    font-family: var(--serif);
+    font-weight: 300;
+    font-size: clamp(22px, 2.2vw, 28px);
+    line-height: 1.15;
+    letter-spacing: -0.015em;
+    margin: 0;
+    color: var(--text);
+  }
+  .also-card p{
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--text-2);
+  }
+  .also-card .meta{
+    margin-top: auto;
+    padding-top: 14px;
+    border-top: 1px solid var(--hair);
+    font-family: var(--mono);
+    font-size: 10.5px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--steel);
+    display: flex; justify-content: space-between; gap: 12px;
+  }
+  .also-card .meta b{
+    color: var(--text-2);
+    font-weight: 500;
+  }
+  @media (max-width: 900px){
+    .also-grid{ grid-template-columns: 1fr; }
+  }
+
+  /* ───────── PROCESS ───────── */
+  .process-section{ border-top: 1px solid var(--hair); }
+  .process-grid{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0;
+    border: 1px solid var(--hair);
+    border-radius: 10px;
+    overflow: hidden;
+    background: rgba(255,255,255,0.012);
+  }
+  .pstep{
+    padding: clamp(28px, 3.4vw, 42px) clamp(22px, 2.6vw, 32px);
+    border-right: 1px solid var(--hair);
+    display: flex; flex-direction: column;
+    gap: 16px;
+    min-height: 360px;
+    position: relative;
+    transition: background .3s ease;
+  }
+  .pstep:last-child{ border-right: 0; }
+  .pstep:hover{
+    background: rgba(184,153,104,0.04);
+  }
+  .pstep .nrow{
+    display: flex; align-items: center; justify-content: space-between;
+    margin-bottom: 4px;
+  }
+  .pstep .nbig{
+    font-family: var(--serif);
+    font-weight: 300;
+    font-size: clamp(40px, 4vw, 56px);
+    line-height: 0.9;
+    color: var(--brass);
+    letter-spacing: -0.02em;
+    font-variant-numeric: tabular-nums;
+  }
+  .pstep .dur{
+    font-family: var(--mono);
+    font-size: 10.5px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--steel);
+    text-align: right;
+    line-height: 1.5;
+  }
+  .pstep .dur b{
+    display: block;
+    color: var(--text-2);
+    font-weight: 500;
+    margin-top: 2px;
+  }
+  .pstep h3{
+    font-family: var(--serif);
+    font-weight: 300;
+    font-size: clamp(22px, 2.1vw, 26px);
+    line-height: 1.15;
+    letter-spacing: -0.015em;
+    margin: 0;
+    color: var(--text);
+    max-width: 18ch;
+    text-wrap: balance;
+  }
+  .pstep p{
+    font-size: 14.5px;
+    line-height: 1.55;
+    color: var(--text-2);
+    margin: 0;
+  }
+  .pstep .doing{
+    margin-top: auto;
+    border-top: 1px solid var(--hair);
+    padding-top: 14px;
+  }
+  .pstep .doing .lbl{
+    font-family: var(--mono);
+    font-size: 9.5px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--steel);
+    margin-bottom: 8px;
+  }
+  .pstep .doing ul{
+    list-style: none; padding: 0; margin: 0;
+    display: flex; flex-direction: column;
+    gap: 6px;
+  }
+  .pstep .doing li{
+    font-family: var(--mono);
+    font-size: 10.5px;
+    letter-spacing: 0.06em;
+    color: var(--text-2);
+    text-transform: uppercase;
+    padding-left: 14px;
+    position: relative;
+  }
+  .pstep .doing li::before{
+    content:""; position: absolute; left: 0; top: 6px;
+    width: 6px; height: 6px;
+    background: var(--brass); opacity: 0.7;
+    border-radius: 1px;
+  }
+  @media (max-width: 1080px){
+    .process-grid{ grid-template-columns: repeat(2, 1fr); }
+    .pstep{ border-right: 1px solid var(--hair); }
+    .pstep:nth-child(2n){ border-right: 0; }
+    .pstep:nth-child(n+3){ border-top: 1px solid var(--hair); }
+  }
+  @media (max-width: 600px){
+    .process-grid{ grid-template-columns: 1fr; }
+    .pstep{ border-right: 0; }
+    .pstep + .pstep{ border-top: 1px solid var(--hair); }
+    .pstep{ min-height: auto; }
+  }
+
+  /* ───────── DELIVERABLES ───────── */
+  .deliv-section{ border-top: 1px solid var(--hair); }
+  .deliv-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: clamp(20px, 2.4vw, 32px);
+  }
+  .dcard{
+    border: 1px solid var(--hair);
+    border-radius: 8px;
+    padding: clamp(24px, 3vw, 32px);
+    background: rgba(255,255,255,0.012);
+    display: flex; flex-direction: column; gap: 14px;
+    transition: border-color .3s ease, background .3s ease;
+  }
+  .dcard:hover{
+    border-color: rgba(184,153,104,0.30);
+    background: rgba(255,255,255,0.02);
+  }
+  .dcard .tag{
+    font-family: var(--mono);
+    font-size: 10.5px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--brass);
+    display: inline-flex; align-items: center; gap: 10px;
+  }
+  .dcard .tag .bar{ width: 16px; height: 1px; background: var(--brass); opacity: 0.6; }
+  .dcard h3{
+    font-family: var(--serif);
+    font-weight: 300;
+    font-size: clamp(22px, 2.1vw, 28px);
+    line-height: 1.15;
+    letter-spacing: -0.015em;
+    margin: 0;
+    color: var(--text);
+  }
+  .dcard p{
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--text-2);
+    margin: 0;
+  }
+  .dcard .specs{
+    margin-top: auto;
+    padding-top: 14px;
+    border-top: 1px solid var(--hair);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  .dcard .spec{
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--steel);
+    line-height: 1.6;
+  }
+  .dcard .spec b{
+    display: block;
+    color: var(--text-2);
+    font-weight: 500;
+    font-size: 12.5px;
+    font-family: var(--sans);
+    letter-spacing: 0.02em;
+    margin-top: 2px;
+    text-transform: none;
+  }
+  @media (max-width: 900px){
+    .deliv-grid{ grid-template-columns: 1fr; }
+  }
+
+  /* ───────── COST OF WAITING (pre-pricing) ───────── */
+  .stakes-section{
+    border-top: 1px solid var(--hair);
+    background: linear-gradient(180deg, rgba(255,255,255,0.012), transparent 80%);
+  }
+  .stakes-grid{
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: clamp(32px, 5vw, 80px);
+    align-items: start;
+  }
+  .stakes-copy h3{
+    font-family: var(--serif);
+    font-weight: 300;
+    font-size: clamp(30px, 3.4vw, 44px);
+    line-height: 1.06;
+    letter-spacing: -0.015em;
+    margin: 14px 0 18px;
+    max-width: 22ch;
+    text-wrap: balance;
+  }
+  .stakes-copy h3 em{ font-style: italic; color: var(--brass); }
+  .stakes-copy p{
+    font-size: 16.5px;
+    line-height: 1.7;
+    color: var(--text-2);
+    max-width: 50ch;
+    margin: 0 0 14px;
+  }
+  .stakes-copy p strong{ color: var(--text); font-weight: 500; }
+  .stakes-ledger{
+    border: 1px solid var(--hair);
+    border-radius: 10px;
+    background: rgba(255,255,255,0.012);
+    overflow: hidden;
+  }
+  .stakes-row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+    border-bottom: 1px solid var(--hair);
+  }
+  .stakes-row:last-child{ border-bottom: 0; }
+  .stakes-cell{
+    padding: clamp(18px, 2.4vw, 26px);
+    display: flex; flex-direction: column;
+    gap: 6px;
+  }
+  .stakes-cell.cost{
+    background: rgba(245,241,234,0.02);
+    border-right: 1px solid var(--hair);
+  }
+  .stakes-cell.gain{
+    background:
+      radial-gradient(60% 80% at 100% 0%, rgba(184,153,104,0.07), transparent 60%);
+  }
+  .stakes-cell .lbl{
+    font-family: var(--mono);
+    font-size: 9.5px;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: var(--steel);
+  }
+  .stakes-cell.gain .lbl{ color: var(--brass); }
+  .stakes-cell .ln{
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: clamp(16px, 1.5vw, 19px);
+    line-height: 1.35;
+    color: var(--text);
+    letter-spacing: -0.005em;
+  }
+  .stakes-cell.cost .ln{
+    color: rgba(245,241,234,0.7);
+    text-decoration: line-through;
+    text-decoration-color: rgba(245,241,234,0.25);
+    text-decoration-thickness: 1px;
+  }
+  .stakes-cell.gain .ln em{ font-style: italic; color: var(--brass); }
+  @media (max-width: 800px){
+    .stakes-grid{ grid-template-columns: 1fr; }
+    .stakes-row{ grid-template-columns: 1fr; }
+    .stakes-cell.cost{ border-right: 0; border-bottom: 1px solid var(--hair); }
+  }
+
+  /* ───────── PRICING ───────── */
+  .pricing-section{
+    border-top: 1px solid var(--hair);
+    background:
+      radial-gradient(60% 80% at 50% 0%, rgba(184,153,104,0.05), transparent 70%);
+  }
+  .pricing-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: clamp(20px, 2.6vw, 32px);
+  }
+  .ptier{
+    border: 1px solid var(--hair);
+    border-radius: 10px;
+    padding: clamp(28px, 3.4vw, 40px);
+    background: rgba(255,255,255,0.012);
+    display: flex; flex-direction: column;
+    gap: 18px;
+    position: relative;
+    transition: border-color .3s ease, transform .3s ease, background .3s ease;
+  }
+  .ptier:hover{
+    border-color: rgba(184,153,104,0.25);
+    background: rgba(255,255,255,0.02);
+  }
+  .ptier.featured{
+    border-color: rgba(184,153,104,0.5);
+    background:
+      radial-gradient(120% 80% at 50% 0%, rgba(184,153,104,0.08), transparent 60%),
+      rgba(255,255,255,0.015);
+    transform: translateY(-6px);
+  }
+  .ptier.featured:hover{ transform: translateY(-9px); }
+  .ptier::after{
+    content:"";
+    position: absolute; inset: -1px;
+    border-radius: inherit;
+    background: radial-gradient(180px 160px at var(--mx, 50%) var(--my, 0%), rgba(184,153,104,0.16), transparent 65%);
+    opacity: 0;
+    transition: opacity .5s ease;
+    pointer-events: none;
+  }
+  .ptier:hover::after{ opacity: 1; }
+  .ptier-flag{
+    position: absolute; top: -1px; left: 24px;
+    transform: translateY(-50%);
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: #1a1408;
+    background: var(--brass);
+    padding: 5px 11px;
+    border-radius: 3px;
+  }
+  .ptier .num{
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: var(--steel);
+  }
+  .ptier h3{
+    font-family: var(--serif);
+    font-weight: 300;
+    font-size: clamp(28px, 3vw, 36px);
+    line-height: 1.05;
+    letter-spacing: -0.015em;
+    margin: 0;
+    color: var(--text);
+    max-width: 14ch;
+  }
+  .ptier h3 em{ font-style: italic; color: var(--brass); }
+  .ptier .who{
+    font-family: var(--serif);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgba(245,241,234,0.85);
+    margin: 0;
+    max-width: 32ch;
+  }
+  .ptier .price{
+    margin: 8px 0 0;
+    padding: 16px 0;
+    border-top: 1px solid var(--hair);
+    border-bottom: 1px solid var(--hair);
+    display: flex; align-items: baseline; gap: 10px;
+    flex-wrap: wrap;
+  }
+  .ptier .price .amt{
+    font-family: var(--serif);
+    font-weight: 300;
+    font-style: italic;
+    font-size: clamp(32px, 3.4vw, 44px);
+    line-height: 1;
+    letter-spacing: -0.018em;
+    color: var(--brass);
+  }
+  .ptier .price .amt .from{
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: var(--steel);
+    display: block;
+    margin-bottom: 4px;
+    font-weight: 500;
+  }
+  .ptier .price .unit{
+    font-family: var(--sans);
+    font-size: 13px;
+    color: var(--text-2);
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    line-height: 1.4;
+  }
+  .ptier .price .unit b{ display: block; color: var(--steel); font-family: var(--mono); font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; margin-top: 2px; font-weight: 500; }
+
+  /* Subtle note at the foot of the pricing section, replaces the
+     previous public "indicative pricing" lede. */
+  .pricing-note{
+    max-width: 760px;
+    margin: clamp(28px, 4vh, 44px) auto 0;
+    padding: 18px 22px;
+    text-align: center;
+    font-family: var(--sans);
+    font-size: 13.5px;
+    line-height: 1.55;
+    color: var(--text-2);
+    border: 1px solid var(--hair);
+    border-radius: 3px;
+    background: rgba(255,255,255,0.012);
+    display: flex; align-items: center; justify-content: center; gap: 14px;
+    flex-wrap: wrap;
+  }
+  .pricing-note .bar{
+    display: inline-block; width: 22px; height: 1px; background: var(--brass); opacity: 0.6;
+    flex: none;
+  }
+  .ptier-includes{
+    list-style: none; margin: 0; padding: 0;
+    display: flex; flex-direction: column;
+    gap: 11px;
+  }
+  .ptier-includes li{
+    font-size: 14.5px;
+    line-height: 1.5;
+    color: var(--text-2);
+    position: relative;
+    padding-left: 26px;
+  }
+  .ptier-includes li::before{
+    content:""; position: absolute; left: 0; top: 7px;
+    width: 12px; height: 7px;
+    border-left: 1.5px solid var(--brass);
+    border-bottom: 1.5px solid var(--brass);
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+  }
+  .ptier-includes li b{ color: var(--text); font-weight: 500; }
+  .ptier-cta{
+    margin-top: auto;
+    padding-top: 8px;
+  }
+
+  @media (max-width: 980px){
+    .pricing-grid{ grid-template-columns: 1fr; }
+    .ptier.featured{ transform: none; }
+    .ptier.featured:hover{ transform: translateY(-3px); }
+  }
+
+  /* ───────── ADD-ONS ───────── */
+  .addons-section{ border-top: 1px solid var(--hair); }
+  .addons-table{
+    border-top: 1px solid var(--hair-strong);
+  }
+  .ar{
+    display: grid;
+    grid-template-columns: 1.5fr 2.2fr;
+    gap: 22px;
+    align-items: center;
+    padding: 18px 4px;
+    border-bottom: 1px solid var(--hair);
+    transition: background .25s ease, padding .25s ease;
+  }
+  .ar.header{
+    padding: 12px 4px;
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: var(--steel);
+  }
+  .ar:not(.header):hover{
+    background: rgba(255,255,255,0.02);
+    padding: 18px 12px;
+  }
+  .ar .nm{
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--text);
+    letter-spacing: -0.005em;
+  }
+  .ar .nm em{ font-style: italic; color: var(--brass); }
+  .ar .what{
+    font-size: 14px;
+    color: var(--text-2);
+    line-height: 1.45;
+  }
+  @media (max-width: 700px){
+    .ar{ grid-template-columns: 1fr; gap: 6px; padding: 16px 4px; }
+    .ar.header{ display: none; }
+  }
+
+  /* ───────── RECURRING / FAQ-LIGHT ───────── */
+  .recurring-section{
+    border-top: 1px solid var(--hair);
+  }
+  .recurring-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(28px, 4vw, 64px);
+    align-items: center;
+  }
+  .recurring-copy h3{
+    font-family: var(--serif);
+    font-weight: 300;
+    font-size: clamp(30px, 3.4vw, 44px);
+    line-height: 1.06;
+    letter-spacing: -0.015em;
+    margin: 14px 0 18px;
+    max-width: 20ch;
+    text-wrap: balance;
+  }
+  .recurring-copy h3 em{ font-style: italic; color: var(--brass); }
+  .recurring-copy p{
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--text-2);
+    max-width: 50ch;
+    margin: 0 0 16px;
+  }
+  .recurring-stats{
+    border-left: 1px solid var(--hair);
+    padding-left: clamp(24px, 3vw, 44px);
+    display: flex; flex-direction: column;
+    gap: 28px;
+  }
+  .rstat .lbl{
+    font-family: var(--mono);
+    font-size: 10.5px;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: var(--steel);
+    margin-bottom: 8px;
+    display: flex; align-items: center; gap: 10px;
+  }
+  .rstat .lbl .bar{
+    width: 22px; height: 1px; background: var(--brass); opacity: 0.6;
+  }
+  .rstat .v{
+    font-family: var(--serif);
+    font-weight: 300;
+    font-size: clamp(44px, 5vw, 68px);
+    line-height: 0.95;
+    letter-spacing: -0.025em;
+    color: var(--brass);
+    font-variant-numeric: tabular-nums;
+    display: flex; align-items: baseline; gap: 8px;
+  }
+  .rstat .v .qualifier{
+    font-family: var(--serif);
+    font-weight: 300;
+    font-style: italic;
+    font-size: clamp(18px, 2vw, 24px);
+    color: var(--text-2);
+  }
+  .rstat .nt{
+    margin: 8px 0 0;
+    font-size: 14px;
+    line-height: 1.55;
+    color: var(--text-2);
+    max-width: 36ch;
+  }
+  @media (max-width: 900px){
+    .recurring-grid{ grid-template-columns: 1fr; }
+    .recurring-stats{ border-left: 0; padding-left: 0; border-top: 1px solid var(--hair); padding-top: 28px; }
+  }
+
+  /* ───────── FAQ-light ───────── */
+  .approach-faq{
+    border-top: 1px solid var(--hair);
+  }
+  .afq-list{
+    border-top: 1px solid var(--hair);
+  }
+  .afq-item{ border-bottom: 1px solid var(--hair); }
+  .afq-q{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    color: var(--text);
+    text-align: left;
+    padding: clamp(18px, 2.4vh, 24px) 0;
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: clamp(18px, 1.6vw, 22px);
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: 36px 1fr 40px;
+    gap: clamp(16px, 2vw, 28px);
+    align-items: center;
+    transition: color .2s ease;
+  }
+  .afq-q:hover{ color: var(--brass); }
+  .afq-q .qnum{
+    font-family: var(--mono);
+    font-weight: 500;
+    font-size: 11px;
+    letter-spacing: 0.16em;
+    color: var(--steel);
+  }
+  .afq-q .qtoggle{
+    justify-self: end;
+    width: 26px; height: 26px;
+    border: 1px solid var(--hair-strong);
+    border-radius: 50%;
+    position: relative;
+    transition: border-color .25s ease, background .25s ease;
+  }
+  .afq-q .qtoggle::before,
+  .afq-q .qtoggle::after{
+    content:""; position: absolute; left: 50%; top: 50%;
+    background: var(--text-2);
+    transform-origin: center;
+  }
+  .afq-q .qtoggle::before{ width: 10px; height: 1px; transform: translate(-50%, -50%); }
+  .afq-q .qtoggle::after{ width: 1px; height: 10px; transform: translate(-50%, -50%); transition: opacity .25s ease; }
+  .afq-item.open .afq-q .qtoggle{ background: var(--brass); border-color: var(--brass); }
+  .afq-item.open .afq-q .qtoggle::before{ background: #1a1408; }
+  .afq-item.open .afq-q .qtoggle::after{ opacity: 0; }
+  .afq-a{
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height .35s ease;
+  }
+  .afq-item.open .afq-a{ max-height: 600px; }
+  .afq-a-inner{
+    padding: 0 0 24px clamp(52px, 5vw, 64px);
+    max-width: 64ch;
+    font-size: 15.5px;
+    line-height: 1.65;
+    color: var(--text-2);
+  }
+  @media (max-width: 700px){
+    .afq-q{ grid-template-columns: 28px 1fr 28px; gap: 12px; }
+    .afq-a-inner{ padding-left: 40px; }
+  }
+</style>
+
+<!-- ============================================================
+     STRUCTURED DATA · schema.org JSON-LD
+     ============================================================ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://pointcloudvisuals.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Approach", "item": "https://pointcloudvisuals.com/approach" }
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://pointcloudvisuals.com/#edwin",
+      "name": "Edwin Boer",
+      "jobTitle": "Founder, Registered Architect",
+      "description": "Registered architect specialising in cinematic visualisation of LiDAR and reality capture datasets. Founder of Point Cloud Visuals.",
+      "url": "https://pointcloudvisuals.com/approach",
+      "worksFor": { "@id": "https://pointcloudvisuals.com/#org" },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Melbourne",
+        "addressRegion": "VIC",
+        "addressCountry": "AU"
+      },
+      "alumniOf": "Architects Registration Board of Victoria",
+      "award": [
+        "Winner · 2025 3Dise Visualization Contest",
+        "Best Point Cloud Visualisation Specialist in Australia · APAC Insider 2026"
+      ],
+      "knowsAbout": [
+        "Point cloud visualisation",
+        "LiDAR rendering",
+        "Photogrammetry",
+        "Scan-to-BIM",
+        "Reality capture",
+        "Architectural visualisation",
+        "NUBIGON",
+        "Revit",
+        "Rhino"
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/in/edwin-massey/"
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://pointcloudvisuals.com/approach#service",
+      "name": "Cinematic visualisation of LiDAR and reality capture datasets",
+      "provider": { "@id": "https://pointcloudvisuals.com/#org" },
+      "serviceType": "Reality capture visual production",
+      "areaServed": "Worldwide",
+      "termsOfService": "https://pointcloudvisuals.com/approach",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Pricing tiers",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "name": "Single project",
+            "description": "One dataset, one defined audience, a tender, a board, a show floor. Includes one 60-180 sec flythrough, two review rounds, social cuts, 8 hero stills.",
+            "price": "6500.00",
+            "priceCurrency": "AUD",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "price": "6500.00",
+              "priceCurrency": "AUD",
+              "minPrice": "6500.00"
+            },
+            "availability": "https://schema.org/InStock"
+          },
+          {
+            "@type": "Offer",
+            "name": "Quarterly pipeline",
+            "description": "For studios scanning every month. One full project per quarter plus three monthly cuts, retained creative direction, priority production lane, annual content roadmap.",
+            "price": "5200.00",
+            "priceCurrency": "AUD",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "5200.00",
+              "priceCurrency": "AUD",
+              "unitText": "MON",
+              "minPrice": "5200.00"
+            },
+            "availability": "https://schema.org/InStock"
+          },
+          {
+            "@type": "Offer",
+            "name": "Annual partner",
+            "description": "1-3 full projects per quarter plus monthly cuts. First-in-queue turnaround, trade-show retainer, co-branded sales assets.",
+            "price": "9800.00",
+            "priceCurrency": "AUD",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "9800.00",
+              "priceCurrency": "AUD",
+              "unitText": "MON",
+              "minPrice": "9800.00"
+            },
+            "availability": "https://schema.org/InStock"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "HowTo",
+      "@id": "https://pointcloudvisuals.com/approach#process",
+      "name": "From dataset to deployed deliverable",
+      "description": "The five-step rhythm Point Cloud Visuals runs for every engagement.",
+      "totalTime": "P8D",
+      "step": [
+        { "@type": "HowToStep", "position": 1, "name": "Dataset review", "text": "Send a sample. The dataset is reviewed personally. NDA signed on request. Free." },
+        { "@type": "HowToStep", "position": 2, "name": "Scope and proposal", "text": "Within 3 working days, a written proposal: visual treatment, fixed-fee quote, calendar and deadlines." },
+        { "@type": "HowToStep", "position": 3, "name": "Production", "text": "Typical turnaround 5-8 business days. End-to-end production in NUBIGON, Unreal Engine, Revit, Recap, ArchiCAD, Twinmotion, Resolve." },
+        { "@type": "HowToStep", "position": 4, "name": "Delivery", "text": "Master files in every format, plus a versioning archive. Two review rounds included." },
+        { "@type": "HowToStep", "position": 5, "name": "Deployment", "text": "Optional deployment brief covering channels, captions, sales handoff, 12-month deployment plan." }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://pointcloudvisuals.com/approach#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is the dataset review actually free?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. The first 30 minutes on your dataset is unbilled. NDAs signed on request before any file is opened." }
+        },
+        {
+          "@type": "Question",
+          "name": "What does fixed fee really mean?",
+          "acceptedAnswer": { "@type": "Answer", "text": "The number in the proposal is the number on the invoice. Two review rounds are included; substantive scope changes are quoted as a change order before any extra work starts." }
+        },
+        {
+          "@type": "Question",
+          "name": "Can we buy out our master files?",
+          "acceptedAnswer": { "@type": "Answer", "text": "You always own everything delivered, tenders, trade shows, web, social, email, client presentations, commercial reuse. No licensing restrictions. Source files sit in the source-archive ZIP and are also yours." }
+        },
+        {
+          "@type": "Question",
+          "name": "What if our deadline is sooner than 5-8 days?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Priority turnaround (48-72 hours) is available as an add-on at +35% of the base fee, subject to calendar. Recurring partners are first in the priority queue. Same-day delivery is not offered." }
+        },
+        {
+          "@type": "Question",
+          "name": "Can we cancel a pipeline mid-term?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Quarterly pipelines roll quarter-to-quarter with 30 days notice. Annual partnerships commit to the 12-month term and cover one paused quarter without penalty." }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you ever subcontract?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No production work is subcontracted. For specialised audio mastering or translation, named partner studios are listed in the proposal and you can decline either." }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav-wrap" data-screen-label="Nav">
+  <nav class="nav" aria-label="Primary">
+    <a class="nav-brand" href="/" aria-label="Point Cloud Visuals home">
+        <img class="mark" src="assets/pcv-mark-white.png" alt="" width="32" height="32" decoding="async" />
+        <span class="wordmark">Point Cloud Visuals</span>
+      </a>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="Work.html">Portfolio</a>
+      <a href="Approach.html" class="is-active">Approach</a>
+      <a href="#cta">Contact</a>
+    </div>
+    <a class="nav-cta" href="#cta">Book a call</a>
+    <button class="nav-hamburger" type="button" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<!-- PAGE HERO -->
+<section class="page-hero" data-screen-label="01 Approach hero">
+  <div>
+    <h1>From dataset to <em class="brass">deployed,</em> in five moves.</h1>
+  </div>
+  <div>
+    <p class="lede">Every engagement runs the same five-step rhythm, whether it's a single project for a tender deadline, or a quarterly content pipeline. The first move is always the same: read the dataset.</p>
+    <div class="meta-row">
+      <span>Turnaround <b>3-6 DAYS</b></span>
+      <span>Priority lanes <b>available</b></span>
+      <span>Studio capacity <b>7 / MONTH</b></span>
+    </div>
+  </div>
+</section>
+
+<!-- THE STUDIO (merged from About) -->
+<section class="section studio-section" data-screen-label="02 The studio">
+  <header class="section-head">
+    <div>
+      <h2 class="section-title">A registered architect who chose the <em>other side</em> of the scan.</h2>
+    </div>
+    <p class="section-lede">Point Cloud Visuals is a small studio in Melbourne. For sensitive projects, the same person reads your dataset, scopes the project, and delivers the final frame, too:</p>
+  </header>
+
+  <div class="studio-grid">
+    <div class="portrait" aria-label="Edwin Boer, founder of Point Cloud Visuals">
+      <img class="ph-img"
+           src="assets/edwin-approach.jpg"
+           alt="Studio portrait of Edwin Boer, registered architect and founder of Point Cloud Visuals"
+           loading="lazy" decoding="async" />
+      <div class="corner tl"></div>
+      <div class="corner br"></div>
+      <div class="caption">Edwin Boer · Melbourne · 2026</div>
+    </div>
+
+    <div class="studio-copy">
+      <p>I'm Edwin. I spent six years basing multi-million dollar projects on 3D scans, and understood their fundamental role in everything designed within the existing built environment. Then I started working with surveyors and learning how the data is actually captured and produced. Realised the strongest technical teams struggle to communicate the value they bring and either loose out to those who do, or end up in price wars.</p>
+      <p>PCV exists because the communication problem can be fundamentally improved if you only get the visualisations right, so your data can speak for itself, and almost nobody solving it has stood on both sides.</p>
+      <p>Every project is scoped against the room it has to win: a tender panel, a board, a development committee, a public meeting, a trade-show floor.<br />The deliverable is <strong>reverse-engineered from that room.</strong></p>
+
+      <div class="studio-creds">
+        <div class="sc-item"><span class="lbl">Registered</span><span class="val">Architect · OAR since 2020</span></div>
+        <div class="sc-item"><span class="lbl">Tool stack</span><span class="val">Nubigon · Unreal Engine · Resolve · Recap · Revit · ArchiCAD · Twinmotion</span></div>
+        <div class="sc-item"><span class="lbl">Recognition</span><span class="val">Winner · <em>2025 3Dise Visualization Contest</em><br />APAC Insider · <em>Best Point Cloud Visualisation Specialist, Australia 2026</em></span></div>
+        <div class="sc-item"><span class="lbl">Reach</span><span class="val">AU · US · CA · UK · EU · UAE</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRINCIPLES (merged from About) -->
+<section class="section principles-section" data-screen-label="03 Principles">
+  <header class="section-head">
+    <div>
+      <h2 class="section-title">How the studio <em>actually</em> works.</h2>
+    </div>
+    <p class="section-lede">Three rules the studio commits to before a project starts. <br />The reason recurring partnerships sit at 8 in 10.</p>
+  </header>
+
+  <div class="principles-grid stagger">
+
+    <div class="principle">
+      <span class="pnum">01</span>
+      <h3>Reverse-engineered from the <em>room</em>.</h3>
+      <p>A tender panel, a board, a council, a sales floor, each has a different attention span and a different language. The cut is built for that audience, not for portfolio.</p>
+    </div>
+
+    <div class="principle">
+      <span class="pnum">02</span>
+      <h3>Whatever the work <em>demands</em>.</h3>
+      <p>End results are not defined by the most straightforward tools. We switch tools and adapt the latest AI workflows as needed to bring your vision to life.</p>
+    </div>
+
+    <div class="principle">
+      <span class="pnum">03</span>
+      <h3>Confidential by default.</h3>
+      <p>Datasets are never shared, never used in marketing without written consent. NDAs signed before review when required. Half the work in the index sits under NDA.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="section process-section" data-screen-label="04 Process">
+  <header class="section-head">
+    <div>
+      <h2 class="section-title">The <em>five-move</em> rhythm.</h2>
+    </div>
+    <p class="section-lede">No black box. The same five steps run for every engagement, what changes is the depth of each. Single project on the left, recurring partnership across the year on the right.</p>
+  </header>
+
+  <div class="process-grid stagger">
+
+    <div class="pstep">
+      <div class="nrow">
+        <span class="nbig">01</span>
+        <span class="dur">Step<b>Dataset review</b></span>
+      </div>
+      <h3>Read the data.</h3>
+      <p>You send a sample: anywhere from a single scan to the full project drive. It's reviewed properly before anything is quoted.</p>
+      <div class="doing">
+        <div class="lbl">What happens</div>
+        <ul>
+          <li>NDA on request</li>
+          <li>Format check &amp; alignment</li>
+          <li>Audience &amp; venue brief</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="pstep">
+      <div class="nrow">
+        <span class="nbig">02</span>
+        <span class="dur">Within<b>48 HOURS</b></span>
+      </div>
+      <h3>Scope &amp; proposal.</h3>
+      <p>Back to you with a written proposal: what we'd build, what it would cost, the timeline, and the rooms it has to win.</p>
+      <div class="doing">
+        <div class="lbl">You receive</div>
+        <ul>
+          <li>Visual treatment</li>
+          <li>Fixed-fee quote</li>
+          <li>Calendar &amp; deadlines</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="pstep">
+      <div class="nrow">
+        <span class="nbig">03</span>
+        <span class="dur">Typical<b>3-6 DAYS</b></span>
+      </div>
+      <h3>Production.</h3>
+      <p>The studio builds the deliverable end-to-end, colour, motion, composition, audio. Unlimited reviews until you are 100% satisfied.</p>
+      <div class="doing">
+        <div class="lbl">Working in</div>
+        <ul>
+          <li>NUBIGON · UNREAL ENGINE</li>
+          <li>REVIT · RECAP · ARCHICAD</li>
+          <li>TWINMOTION · RESOLVE</li>
+          <li>COMFY UI · CUSTOM EDITS</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="pstep">
+      <div class="nrow">
+        <span class="nbig">04</span>
+        <span class="dur">Two<b>review rounds</b></span>
+      </div>
+      <h3>Delivery.</h3>
+      <p>You get the master files in every format you'll use - booth, web, social, internal - so your project can help you bring in the next clients wherever they might see it.</p>
+      <div class="doing">
+        <div class="lbl">You receive</div>
+        <ul>
+          <li>4K masters · web cuts</li>
+          <li>Stills &amp; loops</li>
+          <li>VERTICAL CLIPS FOR SOCIALS</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="pstep">
+      <div class="nrow">
+        <span class="nbig">05</span>
+        <span class="dur">Ongoing<b>or one-off</b></span>
+      </div>
+      <h3>Deployment.</h3>
+      <p>Optional but recommended: a deployment brief covering channels, captions, sales handoff, and how to keep the asset working for 12 months.</p>
+      <div class="doing">
+        <div class="lbl">Optional add-ons</div>
+        <ul>
+          <li>Tender-extract pack</li>
+          <li>Sales-team briefing</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- DELIVERABLES -->
+<section class="section deliv-section" data-screen-label="05 Deliverables">
+  <header class="section-head">
+    <div>
+      <h2 class="section-title">Three formats. Every engagement combines them.</h2>
+    </div>
+    <p class="section-lede">The majority of our engagements pull from all three formats. 
+A booth wall reel is rarely the only thing the dataset has to do.</p>
+  </header>
+
+  <div class="deliv-grid stagger">
+
+    <article class="dcard">
+      <span class="tag"><span class="bar"></span>Format · A</span>
+      <h3>Cinematic flythrough.</h3>
+      <p>A camera-driven journey through the dataset, cut for the room it has to win. Tender panels, boardrooms, booth walls, public consultation.</p>
+      <div class="specs">
+        <div class="spec">Length<b>1 - 5 mins</b></div>
+        <div class="spec">Master<b>4K · 60 fps</b></div>
+        <div class="spec">Audio<b>Cleared library</b></div>
+        <div class="spec">Captions<b>Burned + .srt</b></div>
+      </div>
+    </article>
+
+    <article class="dcard">
+      <span class="tag"><span class="bar"></span>Format · B</span>
+      <h3>Multi-channel package.</h3>
+      <p>One dataset, fanned out: vertical social cut, looping booth wall, embedded site asset, sales-deck cuts. Built so the dataset can live in five rooms.</p>
+      <div class="specs">
+        <div class="spec">Cuts<b>5 - 10 versions</b></div>
+        <div class="spec">Aspect<b>16:9 · 9:16 · 1:1</b></div>
+        <div class="spec">Stills<b>3 - 12 keys</b></div>
+        <div class="spec">Caption pack<b>Per channel</b></div>
+      </div>
+    </article>
+
+    <article class="dcard">
+      <span class="tag"><span class="bar"></span>Format · C</span>
+      <h3>Recurring pipeline.</h3>
+      <p>Monthly or quarterly cadence. The studio works against your scan calendar and a 12-month content roadmap, building once and deploying many.</p>
+      <div class="specs">
+        <div class="spec">Cadence<b>Monthly · quarterly</b></div>
+        <div class="spec">Channels<b>5-10 per drop</b></div>
+        <div class="spec">Priority<b>Booked queue</b></div>
+        <div class="spec">Direction<b>Retained</b></div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- COST OF WAITING / STAKES -->
+<section class="section stakes-section" data-screen-label="06 Stakes">
+  <header class="section-head">
+    <div>
+      <h2 class="section-title">What the next four <em>quarters</em> look like.</h2>
+    </div>
+    <p class="section-lede">Two paths from here. One pays nothing. The other pays for itself within the first new project or hardware sale — and keeps bringing in more work after.</p>
+  </header>
+
+  <div class="stakes-grid">
+
+    <div class="stakes-copy">
+      <span class="section-eyebrow" style="margin-bottom: 0;">
+        <span class="bar"></span>The honest read
+      </span>
+      <h3>Doing nothing isn't <em>free</em>.</h3>
+      <p>Most studios in this niche lose dozens of projects they could have won — if only they'd had the visuals to speak in the rooms where they couldn't. Each loss can run into four, five, even six figures, and can be avoided for a fraction of that cost.</p>
+      <p>The first new big project, hardware sale, or tender win can cover the entire annual visualisation partnership fee with a healthy margin. The math gets straightforward once the first asset lands in front of a buyer.</p>
+      <a class="text-link" href="Work.html">See how it played out for other companies
+→</a>
+    </div>
+
+    <div class="stakes-ledger">
+      <div class="stakes-row">
+        <div class="stakes-cell cost">
+          <span class="lbl">Status quo · per quarter</span>
+          <span class="ln">1-3 tenders lost to slicker presentations</span>
+        </div>
+        <div class="stakes-cell gain">
+          <span class="lbl">With PCV · per quarter</span>
+          <span class="ln">Cinematic visual on every <em>serious</em> bid</span>
+        </div>
+      </div>
+      <div class="stakes-row">
+        <div class="stakes-cell cost">
+          <span class="lbl">Status quo · per dataset</span>
+          <span class="ln">Asset dies on a hard drive at handover</span>
+        </div>
+        <div class="stakes-cell gain">
+          <span class="lbl">With PCV · per dataset</span>
+          <span class="ln">Same dataset in <em>5-10 rooms</em></span>
+        </div>
+      </div>
+      <div class="stakes-row">
+        <div class="stakes-cell cost">
+          <span class="lbl">Status quo · in-house build</span>
+          <span class="ln">$80K + a year hiring a comp artist</span>
+        </div>
+        <div class="stakes-cell gain">
+          <span class="lbl">With PCV · this quarter</span>
+          <span class="ln"><em>3-6 days</em> from dataset to delivered</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ENGAGEMENT FORMATS, no public pricing. Final figures are scoped
+     against the dataset on a call; this section frames how studios
+     typically commission work without revealing fees before a conversation. -->
+<section class="section pricing-section" data-screen-label="07 Engagement formats">
+  <header class="section-head">
+    <div>
+      <h2 class="section-title">Three <em>ways</em> to work together.</h2>
+    </div>
+    <p class="section-lede">Most studios start with a single project, then move to a recurring rhythm once the response from clients earns its place. Every fee is fixed, quoted in your currency and scoped against the actual dataset, never a price-list guess.</p>
+  </header>
+
+  <div class="pricing-grid stagger">
+
+    <article class="ptier">
+      <span class="num">Format · 01</span>
+      <h3>Single project.</h3>
+      <p class="who">One dataset, one defined room to win, a tender, a board, a show floor.</p>
+      <div class="price">
+        <span class="amt"><span class="from">Scoped per</span>Project</span>
+        <span class="unit">Fixed fee<b>One-off · quoted on dataset review</b></span>
+      </div>
+      <ul class="ptier-includes">
+        <li><b>One 60-180 sec flythrough</b> · 4K master</li>
+        <li>Two review rounds</li>
+        <li>Vertical &amp; square social cuts</li>
+        <li>8 hero stills</li>
+        <li>Source-archive ZIP</li>
+        <li>5-8 day turnaround</li>
+      </ul>
+      <div class="ptier-cta">
+        <a class="btn btn-ghost" href="#cta">Discuss a single project <span class="arrow">→</span></a>
+      </div>
+    </article>
+
+    <article class="ptier featured">
+      <span class="ptier-flag">Most studios pick this</span>
+      <span class="num">Format · 02</span>
+      <h3>Quarterly <em>pipeline</em>.</h3>
+      <p class="who">For studios scanning every month. Calendar booked four quarters out, priority queue.</p>
+      <div class="price">
+        <span class="amt"><span class="from">Scoped per</span>Quarter</span>
+        <span class="unit">Recurring<b>Quarterly billing · partnership rate</b></span>
+      </div>
+      <ul class="ptier-includes">
+        <li><b>One full project per quarter</b> · plus three monthly cuts</li>
+        <li>Retained creative direction</li>
+        <li>Priority production lane</li>
+        <li>Multi-channel package every drop</li>
+        <li>Annual content roadmap</li>
+        <li>2 strategy calls / quarter</li>
+      </ul>
+      <div class="ptier-cta">
+        <a class="btn btn-primary" href="#cta">Start a pipeline <span class="arrow">→</span></a>
+      </div>
+    </article>
+
+    <article class="ptier">
+      <span class="num">Format · 03</span>
+      <h3>Annual <em>partner</em>.</h3>
+      <p class="who">For studios where visuals are the front edge of the business, tenders, marketing, hardware sales.</p>
+      <div class="price">
+        <span class="amt"><span class="from">Scoped per</span>Year</span>
+        <span class="unit">12-month term<b>Held calendar · first-in-queue</b></span>
+      </div>
+      <ul class="ptier-includes">
+        <li><b>1-3 full projects per quarter</b> · plus monthly cuts</li>
+        <li>First-in-queue turnaround</li>
+        <li>Trade-show &amp; launch retainer</li>
+        <li>Co-branded sales assets</li>
+        <li>Monthly strategy call</li>
+      </ul>
+      <div class="ptier-cta">
+        <a class="btn btn-ghost" href="#cta">Discuss partnership <span class="arrow">→</span></a>
+      </div>
+    </article>
+
+  </div>
+
+  <!-- Quiet note in place of an "indicative pricing" line. Reassures
+       without committing to figures in writing. -->
+  <p class="pricing-note">
+    <span class="bar"></span>
+    Figures are shared in conversation, once the dataset is on the table. Every quote is fixed, written, and signed before work begins.
+  </p>
+</section>
+
+<!-- ADD-ONS -->
+<section class="section addons-section" data-screen-label="08 Add-ons">
+  <header class="section-head">
+    <div>
+      <h2 class="section-title">Optional, <em>opted in deliberately</em>.</h2>
+    </div>
+    <p class="section-lede">Most projects only need one or two of these. They're broken out separately so the base scope stays honest and you can add what you actually need, quoted alongside the project, never assumed in.</p>
+  </header>
+
+  <div class="addons-table">
+
+    <div class="ar header" role="row">
+      <div>Add-on</div>
+      <div>What it covers</div>
+    </div>
+
+    <div class="ar">
+      <div class="nm">Data <em>preparation</em></div>
+      <div class="what">Noise removal, traffic filtering, classification, CAD/BIM realignment on heavy datasets.</div>
+    </div>
+
+    <div class="ar">
+      <div class="nm">Priority turnaround</div>
+      <div class="what">First-in-queue placement. 48-72 hour delivery for tender or trade-show deadlines.</div>
+    </div>
+
+    <div class="ar">
+      <div class="nm">On-site capture coordination</div>
+      <div class="what">Direction and shot list developed on the scan site itself, for high-stakes captures.</div>
+    </div>
+
+    <div class="ar">
+      <div class="nm">Tender extract pack</div>
+      <div class="what">Bid-ready edits, captioned, formatted for the panel. Drop straight into your submission.</div>
+    </div>
+
+    <div class="ar">
+      <div class="nm">Sales-team briefing</div>
+      <div class="what">90-min training so your sales team uses the visuals correctly, and consistently.</div>
+    </div>
+
+    <div class="ar">
+      <div class="nm">Voice-over (engineered)</div>
+      <div class="what">Multi-language VO with technical script review.</div>
+    </div>
+
+    <div class="ar">
+      <div class="nm">Translation &amp; localisation</div>
+      <div class="what">Captions and on-screen typography per market. Bilingual options also available in any language.</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- RECURRING WHY -->
+<section class="section recurring-section" data-screen-label="09 Recurring">
+  <div class="recurring-grid">
+
+    <div class="recurring-copy reveal">
+      <h3>Why recurring partnerships <em>compound</em>.</h3>
+      <p>The first project shows you what the data is capable of. The second proves the response wasn't a fluke. By the third, the visuals are running the front of the business, and that's where the economics flip.</p>
+      <p>Recurring partners pay less per asset, get priority turnaround on tender deadlines, and stop having to scope every new piece of work from scratch. The studio holds the calendar, the creative direction, and the visual library.</p>
+
+      <a class="text-link" href="#cta">Talk about a partnership <span class="arr">→</span></a>
+    </div>
+
+    <div class="recurring-stats reveal delay-1">
+
+      <div class="rstat">
+        <div class="lbl"><span class="bar"></span>Return rate</div>
+        <div class="v"><span data-count="8">8</span><span class="qualifier">/ 10</span></div>
+        <p class="nt">Studios who book a second project after the first delivery.</p>
+      </div>
+
+      <div class="rstat">
+        <div class="lbl"><span class="bar"></span>By project 3</div>
+        <div class="v"><span data-count="70" data-suffix="">70</span><span class="qualifier">% on retainer</span></div>
+        <p class="nt">Most studios scanning monthly are on a quarterly pipeline by the third engagement.</p>
+      </div>
+
+      <div class="rstat">
+        <div class="lbl"><span class="bar"></span>Per-asset cost</div>
+        <div class="v"><span data-count="35" data-prefix="-">-35</span><span class="qualifier">% vs single</span></div>
+        <p class="nt">Effective cost per deliverable on a Tier-02 pipeline versus one-off project pricing.</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ACTIVELY ENGAGING IN (merged from About · relabeled) -->
+<section class="section also-section" data-screen-label="10 Actively engaging in">
+  <header class="section-head">
+    <div>
+      <h2 class="section-title">Actively <em>engaging</em> in.</h2>
+    </div>
+    <p class="section-lede">Two formats the studio runs alongside client production. Calendar limits apply, typically one engagement of each in flight at a time.</p>
+  </header>
+
+  <div class="also-grid stagger">
+
+    <article class="also-card">
+      <span class="num">A.01</span>
+      <h3>Industry speaking.</h3>
+      <p>Keynotes, workshops, and panel work on visualisation as a tender lever, for surveying associations, capture hardware vendors, and AEC conferences.</p>
+      <div class="meta"><span>Format</span><b>45-90 min</b></div>
+    </article>
+
+    <article class="also-card">
+      <span class="num">A.02</span>
+      <h3>Studio consulting.</h3>
+      <p>Half-day deep dive on your visualisation pipeline. Reviews positioning, deliverable templates, sales motion, and the visual tools your team actually needs.</p>
+      <div class="meta"><span>Format</span><b>4 hours · remote</b></div>
+    </article>
+
+  </div>
+</section>
+
+<!-- APPROACH FAQ -->
+<section class="section approach-faq" data-screen-label="11 Approach FAQ">
+  <header class="section-head">
+    <div>
+      <h2 class="section-title">Before the contract is signed.</h2>
+    </div>
+    <p class="section-lede">The questions that come up most after the proposal lands. Anything missing, write directly.</p>
+  </header>
+
+  <div class="afq-list" role="list">
+
+    <div class="afq-item">
+      <button class="afq-q" type="button" aria-expanded="false">
+        <span class="qnum">01</span>
+        <span class="qtxt">Is the dataset review actually free?</span>
+        <span class="qtoggle" aria-hidden="true"></span>
+      </button>
+      <div class="afq-a"><div class="afq-a-inner">
+        <p>Yes. The first 30 minutes on your dataset is unbilled. NDAs signed on request before any file is opened.</p>
+      </div></div>
+    </div>
+
+    <div class="afq-item">
+      <button class="afq-q" type="button" aria-expanded="false">
+        <span class="qnum">02</span>
+        <span class="qtxt">What does "fixed fee" really mean?</span>
+        <span class="qtoggle" aria-hidden="true"></span>
+      </button>
+      <div class="afq-a"><div class="afq-a-inner">
+        <p>The number in the proposal is the number on the invoice. Two review rounds are included; substantive scope changes after sign-off are quoted as a separate change order before any extra work starts.</p>
+      </div></div>
+    </div>
+
+    <div class="afq-item">
+      <button class="afq-q" type="button" aria-expanded="false">
+        <span class="qnum">03</span>
+        <span class="qtxt">Can we buy out our master files?</span>
+        <span class="qtoggle" aria-hidden="true"></span>
+      </button>
+      <div class="afq-a"><div class="afq-a-inner">
+        <p>You always own everything delivered, tenders, trade shows, web, social, email, client presentations, commercial reuse. No licensing restrictions. Source files (the working project) sit in the source-archive ZIP and are also yours.</p>
+      </div></div>
+    </div>
+
+    <div class="afq-item">
+      <button class="afq-q" type="button" aria-expanded="false">
+        <span class="qnum">04</span>
+        <span class="qtxt">What if our deadline is sooner than 3 - 6 days?</span>
+        <span class="qtoggle" aria-hidden="true"></span>
+      </button>
+      <div class="afq-a"><div class="afq-a-inner">
+        <p>Priority turnaround (48-72 hours) is available as an add-on at +35% of the base fee, subject to calendar. Recurring partners are first in the priority queue. Same-day delivery is not offered.</p>
+      </div></div>
+    </div>
+
+    <div class="afq-item">
+      <button class="afq-q" type="button" aria-expanded="false">
+        <span class="qnum">05</span>
+        <span class="qtxt">Can we cancel a pipeline mid-term?</span>
+        <span class="qtoggle" aria-hidden="true"></span>
+      </button>
+      <div class="afq-a"><div class="afq-a-inner">
+        <p>Quarterly pipelines roll quarter-to-quarter with 30 days' notice. Annual partnerships commit to the 12-month term and cover one paused quarter without penalty, useful for studios with seasonal capture work.</p>
+      </div></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<div class="final-section" id="cta" data-screen-label="12 Final CTA">
+  <section class="section">
+    <p class="final-eyebrow"><span class="sep"></span>The next step<span class="sep"></span></p>
+    <h2 class="final-title">Let's see what's possible from your <em>dataset</em>.</h2>
+    <p class="final-body">15-minute call, or a written proposal, same starting point either way. You leave with what we'd build, what it would cost, and what return to expect.</p>
+    <div class="final-buttons">
+      <a class="btn btn-primary" href="https://calendly.com/projects-pointcloudvisuals/30min?month=2026-06" target="_blank" rel="noopener noreferrer">Book a call <span class="arrow">→</span></a>
+      <a class="btn btn-secondary" href="https://tally.so/r/w8WKPz" target="_blank" rel="noopener noreferrer">Request a quote</a>
+    </div>
+    <p class="final-foot">Or write directly to <a href="mailto:projects@pointcloudvisuals.com">projects@pointcloudvisuals.com</a></p>
+  </section>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer" data-screen-label="Footer">
+  <span class="legal">© <span data-year>2026</span> Point Cloud Visuals</span>
+  <div class="nav-mini">
+    <a href="Work.html">Portfolio</a>
+    <a href="Approach.html">Approach</a>
+    <a href="#cta">Contact</a>
+  </div>
+</footer>
+
+<script src="assets/shared.js"></script>
+<script>
+  // FAQ accordion (page-local)
+  (function(){
+    const items = document.querySelectorAll('.afq-item');
+    items.forEach((item) => {
+      const btn = item.querySelector('.afq-q');
+      btn.addEventListener('click', () => {
+        const willOpen = !item.classList.contains('open');
+        items.forEach(i => {
+          i.classList.remove('open');
+          i.querySelector('.afq-q').setAttribute('aria-expanded', 'false');
+        });
+        if(willOpen){
+          item.classList.add('open');
+          btn.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+  })();
+
+  // Pricing-tier cursor glow tracking
+  (function(){
+    if(window.matchMedia('(pointer: coarse)').matches) return;
+    document.querySelectorAll('.ptier').forEach(t => {
+      t.addEventListener('mousemove', (e) => {
+        const r = t.getBoundingClientRect();
+        const mx = ((e.clientX - r.left) / r.width) * 100;
+        const my = ((e.clientY - r.top) / r.height) * 100;
+        t.style.setProperty('--mx', mx + '%');
+        t.style.setProperty('--my', my + '%');
+      });
+    });
+  })();
+</script>
+<script src="assets/enhance.js"></script>
+</body>
+</html>

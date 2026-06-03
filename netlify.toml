@@ -1,0 +1,24 @@
+# Netlify configuration for Point Cloud Visuals
+# Static site — no build step. Publish directory is the repo root.
+
+[build]
+  publish = "."
+
+# Clean URLs: the pages declare canonical URLs of /work and /approach,
+# so serve the corresponding .html files at those paths (200 = rewrite, URL stays clean).
+[[redirects]]
+  from = "/work"
+  to = "/Work.html"
+  status = 200
+
+[[redirects]]
+  from = "/approach"
+  to = "/Approach.html"
+  status = 200
+
+# Light, safe security headers for a public marketing site.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
