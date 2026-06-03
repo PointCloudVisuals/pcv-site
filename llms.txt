@@ -83,7 +83,7 @@ Add-ons: data preparation +$1,200/scan; priority turnaround +35%; on-site captur
 
 ## Authorship & expertise
 
-All visual work is led by Edwin Boer, a registered architect (Architects Registration Board of Victoria, 2018) with deep experience in reality capture workflows. The studio is a small, steadily growing team, every dataset is reviewed personally before quoting. Primary toolset is NUBIGON with overlays in Revit and Rhino, mastered through DaVinci Resolve and After Effects. No production work is subcontracted.
+All visual work is led by Edwin Boer, a registered architect (OAR since 2020) with deep experience in reality capture workflows. The studio is a small, steadily growing team, every dataset is reviewed personally before quoting. Primary toolset is Nubigon, Unreal Engine, DaVinci Resolve, Recap, Revit, ArchiCAD, and Twinmotion. No production work is subcontracted. Recognition includes Winner of the 2025 3Dise Visualization Contest and APAC Insider's Best Point Cloud Visualisation Specialist in Australia (2026).
 
 ## Notable projects (selected)
 
