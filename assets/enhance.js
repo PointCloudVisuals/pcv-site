@@ -380,51 +380,7 @@
     })();
   })();
 
-  /* ─── First-visit loader ───
-     Brief brand reveal on the first page of a session. After ~700ms
-     OR the image's natural first-loop completion, fade out. Respects
-     reduced-motion. Persists "seen" flag in sessionStorage so
-     intra-site nav doesn't re-fire.
-     To disable: remove this block + .pcv-loader styles in shared.css.
-  */
-  (function(){
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-    try{ if (sessionStorage.getItem('pcv-loader-seen')) return; }catch(_){}
-
-    const wrap = document.createElement('div');
-    wrap.className = 'pcv-loader';
-    wrap.setAttribute('aria-hidden', 'true');
-    wrap.innerHTML = `
-      <div class="pcv-loader-inner">
-        <img src="assets/pcv-loader.gif" alt="" width="120" height="120" decoding="async" />
-        <span class="pcv-loader-tag">POINT&nbsp;&nbsp;CLOUD&nbsp;&nbsp;VISUALS</span>
-        <span class="pcv-loader-bar"><span></span></span>
-      </div>
-    `;
-    document.documentElement.appendChild(wrap);
-
-    // Mark "seen" so subsequent same-session navigation skips it
-    try{ sessionStorage.setItem('pcv-loader-seen', '1'); }catch(_){}
-
-    const HOLD_MS = 900;          // minimum visible time
-    const HARD_CAP_MS = 1800;     // never block longer than this
-    const start = performance.now();
-
-    function hide(){
-      wrap.classList.add('is-out');
-      setTimeout(() => wrap.remove(), 500);
-    }
-
-    // Wait for both: minimum hold + document fully loaded OR hard cap
-    function maybeHide(){
-      const elapsed = performance.now() - start;
-      const remaining = Math.max(0, HOLD_MS - elapsed);
-      setTimeout(hide, remaining);
-    }
-    if (document.readyState === 'complete') maybeHide();
-    else window.addEventListener('load', maybeHide, { once: true });
-    setTimeout(hide, HARD_CAP_MS);
-  })();
+  /* First-visit loader removed (was assets/pcv-loader.gif). */
 
   /* ─── View Transitions for same-origin nav ───
      Cross-document crossfade is handled at the CSS layer via
