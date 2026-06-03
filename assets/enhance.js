@@ -382,6 +382,23 @@
 
   /* First-visit loader removed (was assets/pcv-loader.gif). */
 
+  /* ─── Lazy-load the hero video ───
+     The poster paints immediately; the loop's src is attached only after the
+     page has loaded, keeping the video off the critical path (mobile LCP/TBT).
+     No-op on pages without a hero video. */
+  (function(){
+    var v = document.querySelector('video.hero-vid[data-src]');
+    if (!v) return;
+    function loadHero(){
+      if (v.src) return;                 // already loaded
+      v.src = v.getAttribute('data-src');
+      var p = v.play();                  // muted autoplay is allowed without a gesture
+      if (p && p.catch) p.catch(function(){});
+    }
+    if (document.readyState === 'complete') loadHero();
+    else window.addEventListener('load', loadHero, { once: true });
+  })();
+
   /* ─── View Transitions for same-origin nav ───
      Cross-document crossfade is handled at the CSS layer via
      `@view-transition{ navigation: auto }` (shared.css) on modern
