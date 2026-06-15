@@ -819,7 +819,7 @@
       client:'3D Scan Service Amsterdam', cat:'heritage', region:'NL', tint:'heritage', year:'2026',
       card:"Three capture systems: Leica RTC360, Matterport Pro3 and DJI Matrice 4E, fused into a single cinematic walkthrough of one of Amsterdam's most significant cultural landmarks.",
       videos:[
-        { title:'Cinematic walkthrough', region:'Amsterdam, Netherlands', year:'2026', vid:'4c3d3ea9-260f-4d0f-b8f8-3578766fe4a0', tint:'heritage',
+        { title:'Cinematic walkthrough', region:'Amsterdam, Netherlands', year:'2026', vid:'4c3d3ea9-260f-4d0f-b8f8-3578766fe4a0', slug:'amsterdam-landmark', tint:'heritage',
           summary:"Three capture systems ran in parallel on one of Amsterdam's most significant cultural landmarks: Leica RTC360 terrestrial scanning, Matterport Pro3 reality capture, and DJI Matrice 4E aerial photogrammetry. We fused that data into a single cinematic walkthrough covering interior, exterior, garden, and aerial, landing with every audience the building needed, from the architects and engineers to the Embassy team and a public who will never see the point cloud underneath.",
           tags:['Multi-sensor fusion','Cinematic walkthrough','Heritage'],
           outcomes:[['Audiences','One fused dataset, four audiences served'],['Fidelity','Detail preserved at full fidelity']] }
@@ -829,7 +829,7 @@
       client:'Kaptur VR', cat:'heritage', region:'FR', tint:'scan', year:'2025',
       card:"A protected historic-centre building where flight limits blocked full context, CAD and BIM rendered in NUBIGON, with AI filling the gaps the drone couldn't reach.",
       videos:[
-        { title:'Historic City Centre', region:'Historic city centre · France', year:'2025', vid:'72e122ea-6719-4518-9bd5-5fc2f5ca6864', tint:'scan',
+        { title:'Historic City Centre', region:'Historic city centre · France', year:'2025', vid:'72e122ea-6719-4518-9bd5-5fc2f5ca6864', slug:'historic-city-centre', tint:'scan',
           summary:"A mixed-use building in a protected historic centre, where flight restrictions meant the drone couldn't capture full context. Kaptur VR produced the CAD and BIM deliverables; we rendered them in NUBIGON and used AI to fill the gaps the drone couldn't reach, building a complete narrative rather than a list of technical files. The client used it to present to owners and then reused it as a marketing asset.",
           tags:['Heritage','AI gap-filling','CAD/BIM render'],
           outcomes:[['Story','A full site story despite flight limits'],['Reuse','One deliverable: documentation + marketing']] }
@@ -841,7 +841,7 @@
       railNote:"Most Archilink work is for institutional and government clients under NDA. This is the snippet we're able to show.",
       card:"Survey deliverables for institutional and heritage buildings, turned into something a government client could actually share with decision-makers, a project record and a bid-winning tool in one.",
       videos:[
-        { title:'Institutional building · survey film', region:'United Kingdom', year:'2025', vid:'68359807-19f6-4ca8-846e-3991bbc6d82b', tint:'heritage',
+        { title:'Institutional building · survey film', region:'United Kingdom', year:'2025', vid:'68359807-19f6-4ca8-846e-3991bbc6d82b', slug:'institutional-survey', tint:'heritage',
           summary:"Archilink captures institutional and heritage buildings for clients whose brief usually stops at technical reports. We turned their survey deliverables into a clear visual asset their client could share with decision-makers, so the work read as more than a compliance document. It became both a project record and a tool for winning the next tender.",
           tags:['Institutional','Heritage survey','Tender asset'],
           outcomes:[['Shareable','A record decision-makers could actually use'],['Tender','Doubled as a bid-winning asset']] },
@@ -857,15 +857,15 @@
       gridVid:'db330807-2099-4412-8daf-724ea2cc6e5a',
       card:"Manned-helicopter LiDAR turned into decision-ready, cinematic communication tools, from a Texas flood response to a 140 km² airborne capture and a mobile road-corridor scan.",
       videos:[
-        { title:'Sandy Creek · Flood Response', region:'Sandy Creek, Texas, USA', year:'2025', vid:'bb56d82d-33f5-4c5d-a93f-6a45ed1b5de3', tint:'aerial',
+        { title:'Sandy Creek · Flood Response', region:'Sandy Creek, Texas, USA', year:'2025', vid:'bb56d82d-33f5-4c5d-a93f-6a45ed1b5de3', slug:'sandy-creek-flood', tint:'aerial',
           summary:"After the July floods, Phoenix LiDAR flew manned helicopter missions and ran change-detection analysis to reveal damage that wasn't visible from the ground. We took that grayscale public dataset and processed it in NUBIGON into a clear communication tool. The visualisation turned raw survey data into something a community could use to make informed decisions when it mattered most.",
           tags:['Change detection','Aerial LiDAR','Disaster response'],
           outcomes:[['Insight','Flood damage revealed beyond ground-level view'],['Public','Grayscale data made decision-ready']] },
-        { title:'Ranger U580 · City-Scale Texas', region:'Texas, USA', year:'2026', vid:'c06d0831-c519-4d41-ad07-346aed9c52ce', tint:'aerial',
+        { title:'Ranger U580 · City-Scale Texas', region:'Texas, USA', year:'2026', vid:'c06d0831-c519-4d41-ad07-346aed9c52ce', slug:'city-scale-texas', tint:'aerial',
           summary:"140 sqkm of Texas captured with the Ranger U580 airborne system, the largest dataset in the set, with a conversion that ran over 8 hours on current hardware. Built for Phoenix's Geo Week 2026 booth, every frame comes straight from the point cloud, no mesh conversion or modelling. Rendered cinematically in NUBIGON to hold a viewer at city scale where most scanner demos lose them.",
           tags:['Airborne LiDAR','City-scale dataset','Trade show asset'],
           outcomes:[['Scale','140 sqkm rendered direct from point cloud'],['Booth','Played on loop at the Geo Week booth']] },
-        { title:'Ranger Flex · Road Corridor Scan', region:'Texas, USA', year:'2026', vid:'0d11b7f5-be54-455c-a8c6-f56d61177337', tint:'aerial',
+        { title:'Ranger Flex · Road Corridor Scan', region:'Texas, USA', year:'2026', vid:'0d11b7f5-be54-455c-a8c6-f56d61177337', slug:'road-corridor-scan', tint:'aerial',
           summary:"A road corridor scan through a neighbourhood, captured with the Ranger Flex and built as the first of two pieces for Phoenix's Geo Week 2026 booth. The film leans into what the sensor actually records, moving through the corridor while highlighting RGB and intensity in the raw point cloud. No mesh, no modelling, just the dataset rendered cinematically in NUBIGON, so a booth visitor sees what the data looks like rather than a live screen recording in processing software.",
           tags:['Corridor mapping','RGB + intensity','Trade show asset'],
           outcomes:[['Sensor','Sensor data shown cinematically, not a screen capture'],['Booth','Anchored the Geo Week booth presence']] }
@@ -876,7 +876,7 @@
       gridVid:'9fabbfb7-ebc5-441d-8303-38154303afa3',
       card:"A UAV survey engineered into a cinematic flythrough that moves through the exact scenarios where the project's advantages matter, for both internal alignment and external ROI.",
       videos:[
-        { title:'UAV Survey · Cinematic flythrough', region:'United States', year:'2025', vid:'7953abbf-5240-43c7-bffe-d0a65be9f76c', tint:'infra',
+        { title:'UAV Survey · Cinematic flythrough', region:'United States', year:'2025', vid:'7953abbf-5240-43c7-bffe-d0a65be9f76c', slug:'uav-survey-flythrough', tint:'infra',
           summary:"A UAV survey that most teams would model and file away. Working with Blake Horelica's team, we engineered it into a cinematic flythrough in NUBIGON that moves through the exact scenarios where the project's advantages matter. It created two value streams from one dataset: internal alignment, letting non-technical stakeholders visit the site instantly, and external ROI, turning survey data into a marketing asset that shortens the payback on the capture.",
           tags:['UAV survey','Cinematic flythrough','Stakeholder comms'],
           outcomes:[['Alignment','Non-technical teams aligned, no 2D plans'],['ROI','Capture cost recovered faster through reuse']] }
@@ -890,19 +890,19 @@
       gridVid:'55aa0e31-57af-4628-8f47-2c75e290b4d1',
       card:"An ongoing pipeline of cinematic flythroughs built from their classified point clouds, CAD and BIM, produced before the first client meeting so the conversation starts on value, not price.",
       videos:[
-        { title:'Apartment building · multi-stage scan', region:'France · EU', year:'2025', vid:'d71026c7-7920-48e2-86a3-8d3e3c9dcdff', tint:'recurring',
+        { title:'Apartment building · multi-stage scan', region:'France · EU', year:'2025', vid:'d71026c7-7920-48e2-86a3-8d3e3c9dcdff', slug:'apartment-as-built', tint:'recurring',
           summary:"Laser scans taken across successive construction stages, with the as-built BIM overlaid against the final scan to show where reality matched the design and where it didn't. The developer could walk the deviations visually instead of reading a report, changing the conversation from \u201Ctrust our measurements\u201D to \u201Csee it yourself.\u201D",
           tags:['Multi-stage capture','As-built BIM overlay','Deviation walk'],
           outcomes:[['Verification','Reality vs design, walked visually'],['Trust','\u201CSee it yourself,\u201D not \u201Ctrust us\u201D']] },
-        { title:'City-Centre Multi-Family', region:'France · EU', year:'2026', duration:'~1 min', vid:'0e88a69f-adbb-4ddd-b614-9869762e956f', tint:'recurring',
+        { title:'City-Centre Multi-Family', region:'France · EU', year:'2026', duration:'~1 min', vid:'0e88a69f-adbb-4ddd-b614-9869762e956f', slug:'city-centre-multifamily', tint:'recurring',
           summary:"A standard multi-unit residential building, the kind of functional project that carries most AEC revenue but never wins beauty contests. Working with Mathias Alves' team, we took a routine dataset and engineered it into a reusable showcase using a hybrid stack: NUBIGON for the rendering, with AI tools handling seamless transitions between reality and the raw capture. The result explains the what and why of the site in about a minute, so the team stops re-explaining the same things to every client.",
           tags:['Multi-family','Hybrid AI workflow','Reusable showcase'],
           outcomes:[['Speed','Site explained in ~1 min'],['Reuse','A routine dataset turned into a repeatable sales asset']] },
-        { title:'Villa · France', region:'France · EU', year:'2025', vid:'16b81983-cb6f-43ce-a304-9e3425590d61', tint:'recurring',
+        { title:'Villa · France', region:'France · EU', year:'2025', vid:'16b81983-cb6f-43ce-a304-9e3425590d61', slug:'villa-france', tint:'recurring',
           summary:"A villa that helped the team never get compared on price again. We classified and colour-separated the point cloud into Revit-ready layers, giving them a far stronger way to tell the story of their own CAD workflow, and tied it together with a flythrough in NUBIGON \u2014 all ready before any meeting. By the time clients sat down, the conversation had moved from cost to how soon they could see their own asset like this.",
           tags:['Classified point cloud','Revit-ready layers','Flythrough'],
           outcomes:[['Conversation','Moved off price'],['Timing','Value shown before the first meeting']] },
-        { title:'Farm Buildings', region:'France · EU', year:'2026', vid:'94feb46c-5672-4cd0-9075-731cb6b4e10b', tint:'recurring',
+        { title:'Farm Buildings', region:'France · EU', year:'2026', vid:'94feb46c-5672-4cd0-9075-731cb6b4e10b', slug:'farm-buildings', tint:'recurring',
           summary:"A full digital handover, laser scans, photogrammetry, CAD, BIM, and reports, that means a lot to the team who built it and very little to a client looking at it cold. Using data captured by Mathias Alves' team, we turned that dense deliverable into a clear visual narrative. The clip helps stakeholders immediately grasp what the work is actually worth, moving the data from technical to actionable.",
           tags:['Digital handover','Visual narrative','Stakeholder comms'],
           outcomes:[['Legibility','A dense handover made instantly legible'],['Value','Client value communicated without a technical walkthrough']] }
@@ -912,7 +912,7 @@
       client:'Heliac Engineering', cat:'arch', region:'FR', tint:'boardroom', year:'2025',
       card:"A house-to-restaurant conversion documented from point cloud to full BIM, finished with a bilingual short film that travelled far beyond the team's usual reach.",
       videos:[
-        { title:'House to Restaurant Conversion', region:'France · EU', year:'2025', vid:'e17d815b-98cd-4151-8bb6-fd661e3f5dcd', tint:'boardroom',
+        { title:'House to Restaurant Conversion', region:'France · EU', year:'2025', vid:'e17d815b-98cd-4151-8bb6-fd661e3f5dcd', slug:'house-to-restaurant', tint:'boardroom',
           summary:"A residential building being converted to a restaurant, where every dimension and service route had to be documented before the design team could start. Heliac took it from point cloud to full BIM with floor plans, sections, and elevations. We produced the short film with bilingual captions, and the original post by Alexandre Carchi reached far beyond what either of us expected.",
           tags:['Adaptive reuse','Point cloud to BIM','Bilingual captions'],
           outcomes:[['Package','A design-ready documentation set'],['Reach','Post reach well above the norm']] }
@@ -924,7 +924,7 @@
       railNote:"Most of the Joe Sparrow programme is under NDA. These are the snippets we're able to show.",
       card:"A globally recognised developer invited the scanning team to pitch for a multi-mall scan-to-BIM programme. We built cinematic films from their best projects, they won the contract, then asked to reuse the films as their own marketing.",
       videos:[
-        { title:'Multi-mall pitch films', region:'Australia', year:'2026', vid:'6d867fbc-0d51-4e6e-8fbd-6a40c67f472e', tint:'boardroom',
+        { title:'Multi-mall pitch films', region:'Australia', year:'2026', vid:'6d867fbc-0d51-4e6e-8fbd-6a40c67f472e', slug:'multi-mall-pitch', tint:'boardroom',
           summary:"A globally recognised developer invited the scanning team to pitch for a multi-mall scan-to-BIM programme, capture turned into BIM and CAD to speed up fit-out and cut errors. They wanted to pitch with more than screenshots, so we built a series of cinematic videos from their best projects. The boardroom result: they won the contract, then asked for the videos to reuse in their own marketing. That reuse opened the door to further projects together.",
           tags:['Scan-to-BIM','Pitch asset','Multi-site programme'],
           outcomes:[['Result','Won a multi-mall contract from the pitch'],['Reuse','Client reused the videos as their own marketing']] },
@@ -941,7 +941,7 @@
       card:"Three audience-segmented films built from a single hull scan, cut for yacht owners, insurers and refit yards, that replaced a static PDF as the primary sales tool.",
       railNote:"Most Digital Dry Dock work is under NDA. These are the snippets we're able to show.",
       videos:[
-        { title:'Hull scan · 3 audience films', region:'United Kingdom', year:'2025', duration:'2:00 each', vid:'ab84a3e5-3094-454c-bf9c-83adbdb26520', tint:'marine',
+        { title:'Hull scan · 3 audience films', region:'United Kingdom', year:'2025', duration:'2:00 each', vid:'ab84a3e5-3094-454c-bf9c-83adbdb26520', slug:'hull-scan-films', tint:'marine',
           summary:"Three audience-segmented films built from a single hull scan dataset, cut for yacht owners, insurers, and refit yards. Each version speaks to what that audience needs to see. The set replaced a static PDF brochure as the company's primary sales tool.",
           tags:['Audience-segmented films','Hull scan','Sales asset'],
           outcomes:[['Audiences','One dataset, three buyer audiences'],['Sales','Replaced the PDF as primary sales tool']] },
@@ -1049,6 +1049,16 @@
   var byClient = {};
   PROJECTS.forEach(function(p){ byClient[p.client] = p; });
 
+  // Per-film deep links: slug -> { client, index }. Built from the `slug` on each video.
+  var bySlug = {};
+  PROJECTS.forEach(function(p){
+    p.videos.forEach(function(v, i){ if(v.slug){ bySlug[v.slug] = { client:p.client, index:i }; } });
+  });
+  function filmHash(p, i){
+    var v = p.videos[i];
+    return (v && v.slug) ? ('#'+v.slug) : (location.pathname + location.search);
+  }
+
   var modal   = document.getElementById('vmodal');
   var elPlayer= document.getElementById('vm-player');
   var elEye   = document.getElementById('vm-eyebrow');
@@ -1147,6 +1157,10 @@
     elRailTrack.querySelectorAll('.vm-thumb').forEach(function(t){
       t.classList.toggle('is-active', parseInt(t.dataset.i,10)===i);
     });
+    // reflect the current film in the URL (replace, so rail-switching adds no history entries)
+    if(history.state && history.state.pcvModal){
+      history.replaceState({pcvModal:true}, '', filmHash(p, i));
+    }
   }
 
   function thumbHTML(p, v, i){
@@ -1212,16 +1226,17 @@
       elRail.classList.add('hidden');
       elRailTrack.innerHTML = '';
     }
+    // Push a history entry FIRST (so a single Back press closes the lightbox and
+    // returns to the portfolio) and stamp it with the film's deep-link hash. setVideo
+    // then replaceState's the exact film hash onto this same entry.
+    if(!(history.state && history.state.pcvModal)){
+      history.pushState({pcvModal:true}, '', filmHash(p, startIndex||0));
+    }
     setVideo(p, startIndex||0);
     modal.classList.add('open');
     modal.setAttribute('aria-hidden','false');
     document.body.style.overflow = 'hidden';
     document.querySelector('.vmodal-close').focus();
-    // Push a history entry so a single Back press (esp. on mobile) closes
-    // the lightbox and returns to the portfolio, instead of leaving the page.
-    if(!(history.state && history.state.pcvModal)){
-      history.pushState({pcvModal:true}, '');
-    }
   }
 
   function closeModal(fromPop){
@@ -1261,6 +1276,18 @@
     if(elPlayer.classList.contains('vm-pseudofs')){ exitPseudo(); }
     else { closeModal(); }
   });
+
+  // ── Deep links: open a film directly from /work#slug (e.g. a link shared with a client) ──
+  function openFromHash(){
+    var slug = (location.hash || '').replace(/^#/, '');
+    if(!slug) return;
+    var ref = bySlug[slug]; if(!ref) return;
+    // Normalise the landing entry to the grid (no hash) so a Back press from a shared
+    // link returns to the portfolio, then open the film as a pushed history entry.
+    if(history.replaceState){ history.replaceState(null, '', location.pathname + location.search); }
+    openModal(ref.client, ref.index);
+  }
+  openFromHash();
 })();
 </script>
 <script src="assets/enhance.js"></script>
