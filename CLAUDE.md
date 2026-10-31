@@ -1,6 +1,6 @@
 # Point Cloud Visuals — site guide (for coding agents & the owner)
 
-Static marketing site for **Point Cloud Visuals** (PCV): a Melbourne studio that turns
+Static marketing site for **Point Cloud Visuals** (PCV): a Sydney studio that turns
 LiDAR / photogrammetry / 3D-scan datasets into cinematic visual packages.
 Plain HTML/CSS/JS — **no build step, no framework.** Dark editorial aesthetic
 (Cormorant display serif + Geist / Geist Mono, near-black `#0E0E10`, brass `#B89968`).
@@ -42,7 +42,14 @@ Plain HTML/CSS/JS — **no build step, no framework.** Dark editorial aesthetic
 - Nav links are inlined at the top of each page (no shared header include).
 - The **"Home" nav link points to `/`** (homepage is `index.html`); Work/Approach use `.html` files
   (clean `/work` `/approach` resolve via `netlify.toml`).
-- **"Contact" / "Book a call" point to `#cta`** — the Final CTA section on every page. No standalone contact page.
+- **"Contact" points to `#cta`** — the Final CTA section on every page. No standalone contact page.
+- **Every "Book a call" button opens Calendly directly** (new tab), on every page:
+  `https://calendly.com/projects-pointcloudvisuals/30min` (no `?month=` param, so it opens on the current month).
+  The `30min` slug is the only working Calendly URL, but the event itself books **15-minute** slots,
+  so site copy says "15-minute call". Don't "fix" the slug to `15min` (it doesn't exist).
+- **Bottom CTA on every page:** "Reserve a call slot →" (Calendly) + "Apply with my project" (Tally).
+- **Home hero buttons work directly too:** "Reserve a call slot →" (Calendly) and "Apply with my project"
+  (Tally questionnaire `https://tally.so/r/w8WKPz`), both in a new tab.
 
 ## Operational facts (don't re-derive these)
 - **Founder name: Edwin Boer** (everywhere — visible + metadata + llms.txt).
