@@ -44,7 +44,10 @@ Plain HTML/CSS/JS — **no build step, no framework.** Dark editorial aesthetic
   (clean `/work` `/approach` resolve via `netlify.toml`).
 - **"Contact" points to `#cta`** — the Final CTA section on every page. No standalone contact page.
 - **Every "Book a call" button opens Calendly directly** (new tab), on every page:
-  `https://calendly.com/projects-pointcloudvisuals/15min` (no `?month=` param, so it opens on the current month).
+  `https://calendly.com/projects-pointcloudvisuals/30min` (no `?month=` param, so it opens on the current month).
+  The `30min` slug is the only working Calendly URL, but the event itself books **15-minute** slots,
+  so site copy says "15-minute call". Don't "fix" the slug to `15min` (it doesn't exist).
+- **Bottom CTA on every page:** "Reserve a call slot →" (Calendly) + "Apply with my project" (Tally).
 - **Home hero buttons work directly too:** "Reserve a call slot →" (Calendly) and "Apply with my project"
   (Tally questionnaire `https://tally.so/r/w8WKPz`), both in a new tab.
 

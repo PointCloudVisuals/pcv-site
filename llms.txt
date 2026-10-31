@@ -2,7 +2,7 @@
 
 > Done-for-you cinematic visual packages built from LiDAR, photogrammetry, and 3D scan data, for surveying and reality capture studios that have strong datasets but weak presentation.
 
-Point Cloud Visuals (PCV) is a Sydney-based studio founded in 2024 by Edwin Boer. The studio turns scan datasets into cinematic visual packages used for tenders, boardroom pitches, sales decks, LinkedIn content, and trade-show booth walls. Every dataset is reviewed personally before quoting.
+Point Cloud Visuals (PCV) is a Sydney-based studio founded in 2024 by Edwin Boer, named Best Point Cloud Visualisation Specialist in Australia by APAC Insider (2026) and winner of the 2025 3Dise Visualization Contest. The studio turns scan datasets into cinematic visual packages used for tenders, boardroom pitches, sales decks, LinkedIn content, and trade-show booth walls. Every dataset is reviewed personally before quoting.
 
 ## What we do
 
@@ -62,6 +62,7 @@ Written proposal within 24 hours of receiving the data.
 
 ## Recognition
 
+- Best Point Cloud Visualisation Specialist in Australia · APAC Insider 2026
 - Winner · 2025 3Dise Visualization Contest
 - 2026 booth wall reel for Phoenix LiDAR Systems at GeoWeek
 - Speaker · SPAR + AEC Next 2024
@@ -72,7 +73,7 @@ Written proposal within 24 hours of receiving the data.
 - Email: projects@pointcloudvisuals.com
 - LinkedIn: https://www.linkedin.com/company/point-cloud-visuals/
 - Website: https://pointcloudvisuals.com/
-- Booking: book a 15-minute call at https://calendly.com/projects-pointcloudvisuals/15min or by email; every page ends in a Book-a-call / proposal CTA
+- Booking: book a 15-minute call at https://calendly.com/projects-pointcloudvisuals/30min or by email; every page ends in a Reserve a call slot / Apply with my project CTA (project questionnaire: https://tally.so/r/w8WKPz)
 - Response time: within 1 Sydney working day (AEST, UTC+10)
 - Studio hours: Mon, Thu, 09:00-17:00 AEST
 - Confidentiality: NDA on request before any file is opened
@@ -81,7 +82,7 @@ Written proposal within 24 hours of receiving the data.
 
 - /, Home. Overview, six headline case studies, FAQ, final CTA.
 - /work, Work. Reality capture projects across aerial LiDAR, marine, heritage, infrastructure, scan-to-BIM, and recurring partnerships. Filterable by sector. Featured project + grid.
-- /approach, Approach. Combines the studio overview (Edwin Boer's founder story, six years on the client's side of the scan, 2025 3Dise winner), five operating principles, five-step production process, three deliverable formats, three engagement formats, stakes section, add-ons, adjacent engagements (speaking, consulting), and approach FAQ. Each page ends with the contact CTA (Book a call / request a proposal / email).
+- /approach, Approach. Combines the studio overview (Edwin Boer's founder story, six years on the client's side of the scan, 2025 3Dise winner), five operating principles, five-step production process, three deliverable formats, three engagement tiers, stakes section, add-ons, adjacent engagements (speaking, consulting), and approach FAQ. Each page ends with the contact CTA (reserve a call slot / apply with a project / email).
 
 ## Authorship & expertise
 
