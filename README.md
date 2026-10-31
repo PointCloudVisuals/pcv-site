@@ -1,7 +1,7 @@
-# Point Cloud Visuals — website
+# Point Cloud Visuals: website
 
 Static marketing site for Point Cloud Visuals (plain HTML/CSS/JS, no build step).
-Dark editorial aesthetic. Cinematic LiDAR / 3D-scan visualisation studio, Melbourne.
+Dark editorial aesthetic. Cinematic LiDAR / 3D-scan visualisation studio, Sydney.
 
 ## Structure
 | Path | Role |
@@ -19,7 +19,7 @@ Dark editorial aesthetic. Cinematic LiDAR / 3D-scan visualisation studio, Melbou
 Deployed on Netlify. No build command; publish directory is the repo root.
 Canonical/social/structured-data URLs target `https://pointcloudvisuals.com`.
 Until the custom domain is attached, the site runs fine on the temporary
-`*.netlify.app` URL — only the metadata references the final domain.
+`*.netlify.app` URL; only the metadata references the final domain.
 
 ## Local preview
 Open `index.html` directly in a browser, or run a static server:

@@ -1,6 +1,6 @@
 # Point Cloud Visuals — site guide (for coding agents & the owner)
 
-Static marketing site for **Point Cloud Visuals** (PCV): a Melbourne studio that turns
+Static marketing site for **Point Cloud Visuals** (PCV): a Sydney studio that turns
 LiDAR / photogrammetry / 3D-scan datasets into cinematic visual packages.
 Plain HTML/CSS/JS — **no build step, no framework.** Dark editorial aesthetic
 (Cormorant display serif + Geist / Geist Mono, near-black `#0E0E10`, brass `#B89968`).

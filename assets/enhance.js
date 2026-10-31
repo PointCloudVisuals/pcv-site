@@ -84,6 +84,7 @@
       var cta = document.createElement('a');
       cta.className = 'mnav__cta';
       cta.href = ctaSource.getAttribute('href');
+      if(ctaSource.target){ cta.target = ctaSource.target; cta.rel = ctaSource.rel; }
       cta.innerHTML = ctaSource.textContent.trim() + ' <span aria-hidden="true">→</span>';
       foot.appendChild(cta);
     }
@@ -91,7 +92,7 @@
     meta.className = 'mnav__meta';
     meta.innerHTML =
       '<a href="mailto:projects@pointcloudvisuals.com">projects@pointcloudvisuals.com</a>' +
-      '<span>Melbourne · Worldwide</span>';
+      '<span>Sydney · Worldwide</span>';
     foot.appendChild(meta);
     panel.appendChild(foot);
 
@@ -266,7 +267,7 @@
 
   /* ─── "Now [verb]" HUD chip ───
      Bottom-left fixed chip. Rotates verb every 4s through a
-     studio-state list. Shows live Melbourne time, picks AEDT/AEST
+     studio-state list. Shows live Sydney time, picks AEDT/AEST
      automatically. Click-through (pointer-events: none on the chip
      itself; only the dot tooltip is interactive).
      To disable: remove this block + .pcv-hud styles in shared.css.
@@ -279,7 +280,7 @@
       <span class="pcv-hud-dot" aria-hidden="true"></span>
       <span class="pcv-hud-verb" data-verb>RENDERING</span>
       <span class="pcv-hud-sep">·</span>
-      <span class="pcv-hud-loc">MELBOURNE</span>
+      <span class="pcv-hud-loc">SYDNEY</span>
       <span class="pcv-hud-sep">·</span>
       <span class="pcv-hud-time" data-time>00:00</span>
       <span class="pcv-hud-tz" data-tz>AEDT</span>
@@ -291,14 +292,14 @@
     const timeEl = hud.querySelector('[data-time]');
     const tzEl   = hud.querySelector('[data-tz]');
 
-    // Melbourne wall-clock hour:minute, independent of the viewer's timezone.
+    // Sydney wall-clock hour:minute, independent of the viewer's timezone.
     function melbHM(){
       const [h, m] = new Intl.DateTimeFormat('en-GB', {
-        timeZone: 'Australia/Melbourne', hour: '2-digit', minute: '2-digit', hour12: false
+        timeZone: 'Australia/Sydney', hour: '2-digit', minute: '2-digit', hour12: false
       }).format(new Date()).split(':').map(Number);
       return { h, m };
     }
-    // Studio is offline 00:00-07:00 Melbourne, every day (weekends included).
+    // Studio is offline 00:00-07:00 Sydney, every day (weekends included).
     function isAsleep(){ return melbHM().h < 7; }
     function sleepVerbs(){
       const { h, m } = melbHM();
@@ -331,9 +332,9 @@
     function updateTime(){
       try{
         const now = new Date();
-        // Time in Melbourne, 12-hour format with AM/PM suffix
+        // Time in Sydney, 12-hour format with AM/PM suffix
         const t = new Intl.DateTimeFormat('en-AU', {
-          timeZone: 'Australia/Melbourne',
+          timeZone: 'Australia/Sydney',
           hour: 'numeric', minute: '2-digit', hour12: true
         }).format(now)
           // Intl outputs e.g. "8:24 pm", normalise to uppercase + tight spacing
@@ -341,7 +342,7 @@
         timeEl.textContent = t;
         // Timezone short code (AEDT in DST, AEST otherwise)
         const parts = new Intl.DateTimeFormat('en-AU', {
-          timeZone: 'Australia/Melbourne', timeZoneName: 'short'
+          timeZone: 'Australia/Sydney', timeZoneName: 'short'
         }).formatToParts(now);
         const tz = parts.find(p => p.type === 'timeZoneName');
         if (tz) tzEl.textContent = tz.value.replace('GMT','UTC');

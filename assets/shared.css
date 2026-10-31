@@ -987,7 +987,7 @@ body::before{
 
 /* ============================================================
    NOW [VERB] HUD CHIP (site-wide, bottom-left)
-   Studio-state readout + Melbourne time. Click-through.
+   Studio-state readout + Sydney time. Click-through.
    To disable: remove the HUD block from enhance.js.
    ============================================================ */
 .pcv-hud{
@@ -1040,7 +1040,7 @@ body::before{
   opacity: 0;
   transform: translateY(-2px);
 }
-/* Overnight sleep state (00:00-07:00 Melbourne): cool the accent to
+/* Overnight sleep state (00:00-07:00 Sydney): cool the accent to
    steel, dim and steady the dot, reads as "studio is offline". */
 .pcv-hud.is-asleep .pcv-hud-dot{
   background: var(--steel);
@@ -1072,7 +1072,7 @@ body::before{
     letter-spacing: 0.18em;
   }
   .pcv-hud-verb{ min-width: 8ch; }
-  /* Hide the "MELBOURNE" word on small screens to save space */
+  /* Hide the "SYDNEY" word on small screens to save space */
   .pcv-hud-loc, .pcv-hud-loc + .pcv-hud-sep{ display: none; }
 }
 @media (prefers-reduced-motion: reduce){
